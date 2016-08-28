@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF9096051D737D2F0053880F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096041D737D2F0053880F /* AppDelegate.swift */; };
+		BF9096071D737D2F0053880F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096061D737D2F0053880F /* ViewController.swift */; };
+		BF90960A1D737D2F0053880F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF9096081D737D2F0053880F /* Main.storyboard */; };
+		BF90960C1D737D2F0053880F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF90960B1D737D2F0053880F /* Assets.xcassets */; };
+		BF90960F1D737D2F0053880F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF90960D1D737D2F0053880F /* LaunchScreen.storyboard */; };
+		BF90961A1D737D2F0053880F /* VimcityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096191D737D2F0053880F /* VimcityTests.swift */; };
+		BF9096251D737D2F0053880F /* VimcityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096241D737D2F0053880F /* VimcityUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF9096161D737D2F0053880F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF9095F91D737D2F0053880F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF9096001D737D2F0053880F;
+			remoteInfo = Vimcity;
+		};
+		BF9096211D737D2F0053880F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF9095F91D737D2F0053880F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF9096001D737D2F0053880F;
+			remoteInfo = Vimcity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF9096011D737D2F0053880F /* Vimcity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vimcity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9096041D737D2F0053880F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF9096061D737D2F0053880F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF9096091D737D2F0053880F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF90960B1D737D2F0053880F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF90960E1D737D2F0053880F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF9096101D737D2F0053880F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9096151D737D2F0053880F /* VimcityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimcityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9096191D737D2F0053880F /* VimcityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimcityTests.swift; sourceTree = "<group>"; };
+		BF90961B1D737D2F0053880F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9096201D737D2F0053880F /* VimcityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimcityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9096241D737D2F0053880F /* VimcityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimcityUITests.swift; sourceTree = "<group>"; };
+		BF9096261D737D2F0053880F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF9095FE1D737D2F0053880F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9096121D737D2F0053880F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF90961D1D737D2F0053880F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF9095F81D737D2F0053880F = {
+			isa = PBXGroup;
+			children = (
+				BF9096031D737D2F0053880F /* Vimcity */,
+				BF9096181D737D2F0053880F /* VimcityTests */,
+				BF9096231D737D2F0053880F /* VimcityUITests */,
+				BF9096021D737D2F0053880F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF9096021D737D2F0053880F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF9096011D737D2F0053880F /* Vimcity.app */,
+				BF9096151D737D2F0053880F /* VimcityTests.xctest */,
+				BF9096201D737D2F0053880F /* VimcityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF9096031D737D2F0053880F /* Vimcity */ = {
+			isa = PBXGroup;
+			children = (
+				BF9096041D737D2F0053880F /* AppDelegate.swift */,
+				BF9096061D737D2F0053880F /* ViewController.swift */,
+				BF9096081D737D2F0053880F /* Main.storyboard */,
+				BF90960B1D737D2F0053880F /* Assets.xcassets */,
+				BF90960D1D737D2F0053880F /* LaunchScreen.storyboard */,
+				BF9096101D737D2F0053880F /* Info.plist */,
+			);
+			path = Vimcity;
+			sourceTree = "<group>";
+		};
+		BF9096181D737D2F0053880F /* VimcityTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF9096191D737D2F0053880F /* VimcityTests.swift */,
+				BF90961B1D737D2F0053880F /* Info.plist */,
+			);
+			path = VimcityTests;
+			sourceTree = "<group>";
+		};
+		BF9096231D737D2F0053880F /* VimcityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF9096241D737D2F0053880F /* VimcityUITests.swift */,
+				BF9096261D737D2F0053880F /* Info.plist */,
+			);
+			path = VimcityUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF9096001D737D2F0053880F /* Vimcity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF9096291D737D2F0053880F /* Build configuration list for PBXNativeTarget "Vimcity" */;
+			buildPhases = (
+				BF9095FD1D737D2F0053880F /* Sources */,
+				BF9095FE1D737D2F0053880F /* Frameworks */,
+				BF9095FF1D737D2F0053880F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vimcity;
+			productName = Vimcity;
+			productReference = BF9096011D737D2F0053880F /* Vimcity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF9096141D737D2F0053880F /* VimcityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF90962C1D737D2F0053880F /* Build configuration list for PBXNativeTarget "VimcityTests" */;
+			buildPhases = (
+				BF9096111D737D2F0053880F /* Sources */,
+				BF9096121D737D2F0053880F /* Frameworks */,
+				BF9096131D737D2F0053880F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF9096171D737D2F0053880F /* PBXTargetDependency */,
+			);
+			name = VimcityTests;
+			productName = VimcityTests;
+			productReference = BF9096151D737D2F0053880F /* VimcityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF90961F1D737D2F0053880F /* VimcityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF90962F1D737D2F0053880F /* Build configuration list for PBXNativeTarget "VimcityUITests" */;
+			buildPhases = (
+				BF90961C1D737D2F0053880F /* Sources */,
+				BF90961D1D737D2F0053880F /* Frameworks */,
+				BF90961E1D737D2F0053880F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF9096221D737D2F0053880F /* PBXTargetDependency */,
+			);
+			name = VimcityUITests;
+			productName = VimcityUITests;
+			productReference = BF9096201D737D2F0053880F /* VimcityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF9095F91D737D2F0053880F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = thatlevel;
+				TargetAttributes = {
+					BF9096001D737D2F0053880F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					BF9096141D737D2F0053880F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BF9096001D737D2F0053880F;
+					};
+					BF90961F1D737D2F0053880F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = BF9096001D737D2F0053880F;
+					};
+				};
+			};
+			buildConfigurationList = BF9095FC1D737D2F0053880F /* Build configuration list for PBXProject "Vimcity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF9095F81D737D2F0053880F;
+			productRefGroup = BF9096021D737D2F0053880F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF9096001D737D2F0053880F /* Vimcity */,
+				BF9096141D737D2F0053880F /* VimcityTests */,
+				BF90961F1D737D2F0053880F /* VimcityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF9095FF1D737D2F0053880F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF90960F1D737D2F0053880F /* LaunchScreen.storyboard in Resources */,
+				BF90960C1D737D2F0053880F /* Assets.xcassets in Resources */,
+				BF90960A1D737D2F0053880F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9096131D737D2F0053880F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF90961E1D737D2F0053880F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF9095FD1D737D2F0053880F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9096071D737D2F0053880F /* ViewController.swift in Sources */,
+				BF9096051D737D2F0053880F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF9096111D737D2F0053880F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF90961A1D737D2F0053880F /* VimcityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF90961C1D737D2F0053880F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9096251D737D2F0053880F /* VimcityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF9096171D737D2F0053880F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF9096001D737D2F0053880F /* Vimcity */;
+			targetProxy = BF9096161D737D2F0053880F /* PBXContainerItemProxy */;
+		};
+		BF9096221D737D2F0053880F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF9096001D737D2F0053880F /* Vimcity */;
+			targetProxy = BF9096211D737D2F0053880F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF9096081D737D2F0053880F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF9096091D737D2F0053880F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF90960D1D737D2F0053880F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF90960E1D737D2F0053880F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF9096271D737D2F0053880F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF9096281D737D2F0053880F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF90962A1D737D2F0053880F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vimcity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thatlevel.Vimcity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF90962B1D737D2F0053880F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Vimcity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thatlevel.Vimcity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF90962D1D737D2F0053880F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VimcityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thatlevel.VimcityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vimcity.app/Vimcity";
+			};
+			name = Debug;
+		};
+		BF90962E1D737D2F0053880F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VimcityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thatlevel.VimcityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vimcity.app/Vimcity";
+			};
+			name = Release;
+		};
+		BF9096301D737D2F0053880F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VimcityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thatlevel.VimcityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Vimcity;
+			};
+			name = Debug;
+		};
+		BF9096311D737D2F0053880F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VimcityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thatlevel.VimcityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Vimcity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF9095FC1D737D2F0053880F /* Build configuration list for PBXProject "Vimcity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9096271D737D2F0053880F /* Debug */,
+				BF9096281D737D2F0053880F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF9096291D737D2F0053880F /* Build configuration list for PBXNativeTarget "Vimcity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF90962A1D737D2F0053880F /* Debug */,
+				BF90962B1D737D2F0053880F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF90962C1D737D2F0053880F /* Build configuration list for PBXNativeTarget "VimcityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF90962D1D737D2F0053880F /* Debug */,
+				BF90962E1D737D2F0053880F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF90962F1D737D2F0053880F /* Build configuration list for PBXNativeTarget "VimcityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF9096301D737D2F0053880F /* Debug */,
+				BF9096311D737D2F0053880F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF9095F91D737D2F0053880F /* Project object */;
+}
