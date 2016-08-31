@@ -33,8 +33,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Jz-ir-18L">
-                                <rect key="frame" x="357" y="0.0" width="18" height="667"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Jz-ir-18L" customClass="DesignableButton" customModule="Vimcity" customModuleProvider="target">
+                                <rect key="frame" x="330" y="572" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="yFZ-QC-DAR">
@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2241.5" y="2243.5"/>
+            <point key="canvasLocation" x="-2977.5" y="2243.5"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="Wvj-PB-Qu6">
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVv-6H-sYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1687.5" y="2237.5"/>
+            <point key="canvasLocation" x="-2977.5" y="3103.5"/>
         </scene>
         <!--Map Prototype View Controller-->
         <scene sceneID="k71-zf-DC9">
@@ -164,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uo-JL-CZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-506.5" y="396.5"/>
+            <point key="canvasLocation" x="-2570.5" y="2243.5"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="C6r-4J-OAS">
@@ -458,7 +458,7 @@
                     <tabBarItem key="tabBarItem" title="Item 2" id="4wH-AG-J8L"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-2977.5" y="2237.5"/>
+            <point key="canvasLocation" x="-3623.5" y="2243.5"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="HCg-lH-pt5">
@@ -473,18 +473,23 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="Vp0-iG-4Sg"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-3729.5" y="2237.5"/>
+            <point key="canvasLocation" x="-4277.5" y="2243.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Base Tab Bar Controller-->
         <scene sceneID="KZi-Yy-RPc">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPT-bU-3BP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController id="MsC-Wu-3xg" sceneMemberID="viewController">
+                <tabBarController id="MsC-Wu-3xg" customClass="BaseTabBarController" customModule="Vimcity" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qHk-lf-uI4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="defaultIndex">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="fUb-1v-yBB" kind="relationship" relationship="viewControllers" id="I6J-jp-rEH"/>
                         <segue destination="Uce-tl-eFI" kind="relationship" relationship="viewControllers" id="XsW-F6-74Q"/>

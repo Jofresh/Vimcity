@@ -51,6 +51,7 @@
 		BF9096771D7415A70053880F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096761D7415A70053880F /* MainViewController.swift */; };
 		BF9096791D746F210053880F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096781D746F210053880F /* SignUpViewController.swift */; };
 		BFD29AC31D758C25000FEDF8 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD29AC21D758C25000FEDF8 /* LocationViewController.swift */; };
+		BFD29AC51D776D83000FEDF8 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		BF9096761D7415A70053880F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		BF9096781D746F210053880F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BFD29AC21D758C25000FEDF8 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				BF9096041D737D2F0053880F /* AppDelegate.swift */,
 				BF9096061D737D2F0053880F /* ViewController.swift */,
 				BF9096081D737D2F0053880F /* Main.storyboard */,
+				BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */,
 				BF43798E1D757A0E00C36398 /* MapPrototypeViewController.swift */,
 				BF43798C1D75625B00C36398 /* LoginViewController.swift */,
 				BF9096781D746F210053880F /* SignUpViewController.swift */,
@@ -382,6 +385,7 @@
 			files = (
 				BF9096691D7382770053880F /* SpringLabel.swift in Sources */,
 				BF90965E1D7382770053880F /* ImageLoader.swift in Sources */,
+				BFD29AC51D776D83000FEDF8 /* BaseTabBarController.swift in Sources */,
 				BF9096631D7382770053880F /* Misc.swift in Sources */,
 				BF9096741D73FF130053880F /* BWWalkthroughPageViewController.swift in Sources */,
 				BF9096581D7382770053880F /* DesignableImageView.swift in Sources */,
