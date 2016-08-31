@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Feed View Controller-->
+        <!--Item3-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FeedViewController" customModule="Vimcity" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,9 +36,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Jz-ir-18L">
                                 <rect key="frame" x="357" y="0.0" width="18" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="6gI-MD-x0m" kind="modal" modalTransitionStyle="crossDissolve" id="wbY-yr-93K"/>
-                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="yFZ-QC-DAR">
                                 <rect key="frame" x="10" y="210" width="355" height="457"/>
@@ -70,6 +67,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item3" id="Kj9-Td-U1F"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="feed" destination="TeA-x8-aMF" id="oLH-us-Kfe"/>
@@ -79,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-937.5" y="396.5"/>
+            <point key="canvasLocation" x="-2241.5" y="2243.5"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="Wvj-PB-Qu6">
@@ -107,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVv-6H-sYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-937.5" y="1145.5"/>
+            <point key="canvasLocation" x="-1687.5" y="2237.5"/>
         </scene>
         <!--Map Prototype View Controller-->
         <scene sceneID="k71-zf-DC9">
@@ -153,9 +152,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eQZ-6A-LEw">
                                 <rect key="frame" x="0.0" y="0.0" width="18" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="Rms-CR-l8R"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -421,7 +417,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="435-Um-c7X"/>
+                                    <segue destination="MsC-Wu-3xg" kind="modal" id="7Su-5Y-Nde"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6Pb-4I-SpK">
@@ -452,36 +448,37 @@
         <!--Item 2-->
         <scene sceneID="sHC-Ut-3aF">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wC9-iu-egI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Uce-tl-eFI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pIy-M0-HTU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.70590394295302017" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="4wH-AG-J8L"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wC9-iu-egI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2247" y="564"/>
+            <point key="canvasLocation" x="-2977.5" y="2237.5"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="HCg-lH-pt5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgH-B2-QKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="fUb-1v-yBB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hhK-1b-ddu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Vp0-iG-4Sg"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vgH-B2-QKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2247" y="-64"/>
+            <point key="canvasLocation" x="-3729.5" y="2237.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="KZi-Yy-RPc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPT-bU-3BP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="MsC-Wu-3xg" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qHk-lf-uI4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -491,11 +488,11 @@
                     <connections>
                         <segue destination="fUb-1v-yBB" kind="relationship" relationship="viewControllers" id="I6J-jp-rEH"/>
                         <segue destination="Uce-tl-eFI" kind="relationship" relationship="viewControllers" id="XsW-F6-74Q"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="zqL-Jh-eNg"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HPT-bU-3BP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2787" y="250"/>
+            <point key="canvasLocation" x="-2977.5" y="1265.5"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="SHm-If-CY3">
@@ -560,9 +557,6 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" modalTransitionStyle="crossDissolve" id="3ee-Qa-FP2"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -596,6 +590,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lsN-Eo-bJd"/>
-        <segue reference="Rms-CR-l8R"/>
     </inferredMetricsTieBreakers>
 </document>
