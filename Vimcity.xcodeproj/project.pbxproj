@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF3C9A631D806375001A5230 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C9A621D806375001A5230 /* FavoritesViewController.swift */; };
+		BF3C9A651D80663D001A5230 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C9A641D80663D001A5230 /* FavoritesCell.swift */; };
+		BF3C9A6B1D807BD7001A5230 /* LocationProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */; };
 		BF43798D1D75625B00C36398 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF43798C1D75625B00C36398 /* LoginViewController.swift */; };
 		BF43798F1D757A0E00C36398 /* MapPrototypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF43798E1D757A0E00C36398 /* MapPrototypeViewController.swift */; };
 		BF9096051D737D2F0053880F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096041D737D2F0053880F /* AppDelegate.swift */; };
@@ -50,7 +53,6 @@
 		BF9096751D73FF130053880F /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096731D73FF130053880F /* BWWalkthroughViewController.swift */; };
 		BF9096771D7415A70053880F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096761D7415A70053880F /* MainViewController.swift */; };
 		BF9096791D746F210053880F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096781D746F210053880F /* SignUpViewController.swift */; };
-		BFD29AC31D758C25000FEDF8 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD29AC21D758C25000FEDF8 /* LocationViewController.swift */; };
 		BFD29AC51D776D83000FEDF8 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF3C9A621D806375001A5230 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		BF3C9A641D80663D001A5230 /* FavoritesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
+		BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationProfileViewController.swift; sourceTree = "<group>"; };
 		BF43798C1D75625B00C36398 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF43798E1D757A0E00C36398 /* MapPrototypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPrototypeViewController.swift; sourceTree = "<group>"; };
 		BF9096011D737D2F0053880F /* Vimcity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vimcity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +127,6 @@
 		BF9096731D73FF130053880F /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughViewController.swift; path = Spring/BWWalkthroughViewController.swift; sourceTree = "<group>"; };
 		BF9096761D7415A70053880F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		BF9096781D746F210053880F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		BFD29AC21D758C25000FEDF8 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,10 +155,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF3C9A661D8077D2001A5230 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				BF3C9A641D80663D001A5230 /* FavoritesCell.swift */,
+				BF3C9A621D806375001A5230 /* FavoritesViewController.swift */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		BF3C9A671D807815001A5230 /* Walkthru */ = {
+			isa = PBXGroup;
+			children = (
+				BF9096721D73FF130053880F /* BWWalkthroughPageViewController.swift */,
+				BF9096731D73FF130053880F /* BWWalkthroughViewController.swift */,
+				BF9096761D7415A70053880F /* MainViewController.swift */,
+			);
+			name = Walkthru;
+			sourceTree = "<group>";
+		};
 		BF9095F81D737D2F0053880F = {
 			isa = PBXGroup;
 			children = (
-				BFD29AC21D758C25000FEDF8 /* LocationViewController.swift */,
 				BF9096031D737D2F0053880F /* Vimcity */,
 				BF9096181D737D2F0053880F /* VimcityTests */,
 				BF9096231D737D2F0053880F /* VimcityUITests */,
@@ -176,12 +198,12 @@
 			isa = PBXGroup;
 			children = (
 				BF9096341D7382770053880F /* Spring */,
-				BF9096721D73FF130053880F /* BWWalkthroughPageViewController.swift */,
-				BF9096731D73FF130053880F /* BWWalkthroughViewController.swift */,
-				BF9096761D7415A70053880F /* MainViewController.swift */,
+				BF3C9A671D807815001A5230 /* Walkthru */,
+				BF3C9A661D8077D2001A5230 /* Favorites */,
 				BF9096041D737D2F0053880F /* AppDelegate.swift */,
 				BF9096061D737D2F0053880F /* ViewController.swift */,
 				BF9096081D737D2F0053880F /* Main.storyboard */,
+				BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */,
 				BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */,
 				BF43798E1D757A0E00C36398 /* MapPrototypeViewController.swift */,
 				BF43798C1D75625B00C36398 /* LoginViewController.swift */,
@@ -396,10 +418,10 @@
 				BF9096051D737D2F0053880F /* AppDelegate.swift in Sources */,
 				BF90965D1D7382770053880F /* DesignableView.swift in Sources */,
 				BF9096661D7382770053880F /* SpringAnimation.swift in Sources */,
+				BF3C9A631D806375001A5230 /* FavoritesViewController.swift in Sources */,
 				BF9096771D7415A70053880F /* MainViewController.swift in Sources */,
 				BF9096751D73FF130053880F /* BWWalkthroughViewController.swift in Sources */,
 				BF9096651D7382770053880F /* Spring.swift in Sources */,
-				BFD29AC31D758C25000FEDF8 /* LocationViewController.swift in Sources */,
 				BF9096611D7382770053880F /* LoadingView.swift in Sources */,
 				BF90966A1D7382770053880F /* SpringTextField.swift in Sources */,
 				BF9096571D7382770053880F /* DesignableButton.swift in Sources */,
@@ -415,12 +437,14 @@
 				BF9096711D7392B90053880F /* FeedViewController.swift in Sources */,
 				BF90965C1D7382770053880F /* DesignableTextView.swift in Sources */,
 				BF43798D1D75625B00C36398 /* LoginViewController.swift in Sources */,
+				BF3C9A651D80663D001A5230 /* FavoritesCell.swift in Sources */,
 				BF9096591D7382770053880F /* DesignableLabel.swift in Sources */,
 				BF90966F1D7382770053880F /* UnwindSegue.swift in Sources */,
 				BF90966D1D7382770053880F /* TransitionManager.swift in Sources */,
 				BF9096561D7382770053880F /* BlurView.swift in Sources */,
 				BF90966C1D7382770053880F /* SpringView.swift in Sources */,
 				BF90966E1D7382770053880F /* TransitionZoom.swift in Sources */,
+				BF3C9A6B1D807BD7001A5230 /* LocationProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,17 +1,16 @@
 //
-//  LocationViewController.swift
+//  LocationProfileViewController.swift
 //  Vimcity
 //
-//  Created by Josef Myers on 8/30/16.
+//  Created by Josef Myers on 9/7/16.
 //  Copyright © 2016 thatlevel. All rights reserved.
 //
 
 import UIKit
 
-class LocationViewController: UIViewController {
-    @IBAction func onExit(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
+class LocationProfileViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
