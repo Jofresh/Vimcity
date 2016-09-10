@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="SAL-IW-moh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="7nt-fZ-Fje">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -85,7 +85,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location Profile" id="WDl-P0-zAX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location Background Temp" id="WDl-P0-zAX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -104,7 +104,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVv-6H-sYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3411.5" y="3111.5"/>
+            <point key="canvasLocation" x="-3835.5" y="3111.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GtL-Mb-Dba">
+            <objects>
+                <viewController id="rjY-ho-k7M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dYr-Nl-KZq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Studios BG Temp" id="FK0-mR-9nJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59815436241610742" green="0.94546979865771807" blue="0.90614513422818788" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ciY-cD-Vfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3405.5" y="3111.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jDP-E7-w2D">
@@ -114,13 +135,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1RB-in-C1F">
-                                <rect key="frame" x="173" y="323" width="35" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem Credit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1RB-in-C1F">
+                                <rect key="frame" x="130" y="323" width="114" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Redeem Cred BG Temp" id="I2l-gR-lPf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.72855494966442935" green="0.88236682046979864" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -128,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVq-mR-yLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2549.5" y="3111.5"/>
+            <point key="canvasLocation" x="-2977.5" y="3111.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WV1-Nb-qGv">
@@ -138,13 +163,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deal Of The Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tr5-G7-e6U">
-                                <rect key="frame" x="125" y="323" width="125" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pop Up Deal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tr5-G7-e6U">
+                                <rect key="frame" x="140" y="323" width="95" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pop Up Deal BG Temp" id="AMy-t3-TaZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.77136640100671139" green="0.69997902684563762" blue="0.96096371644295298" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -152,31 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fc8-Og-wbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2977.5" y="3111.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="TgV-CL-eJ5">
-            <objects>
-                <viewController id="yrv-18-TCo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8wa-5U-DxP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem Deal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BGS-rx-bDD">
-                                <rect key="frame" x="136" y="323" width="102" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.73408661912751683" green="1" blue="0.80345532718120805" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dph-r7-TeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2977.5" y="3909.5"/>
+            <point key="canvasLocation" x="-2549.5" y="3111.5"/>
         </scene>
         <!--Map Prototype View Controller-->
         <scene sceneID="k71-zf-DC9">
@@ -251,6 +256,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Events BG Temp" id="xUi-0K-Vfy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.61606019295302017" blue="0.66060192953020136" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -276,6 +285,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Me BG Temp" id="pah-5B-bIj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.62743812919463038" green="1" blue="0.67226824664429519" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -285,6 +298,118 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2G-br-mZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-492.5" y="2243.5"/>
+        </scene>
+        <!--Studios Filter View Controller-->
+        <scene sceneID="auc-Am-Vn4">
+            <objects>
+                <viewController modalPresentationStyle="currentContext" id="GDj-Vn-7X3" customClass="StudiosFilterViewController" customModule="Vimcity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a7Y-9Q-fHv" customClass="DesignableView" customModule="Vimcity" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Choose Filter" id="0JH-we-JMP">
+                                <rect key="frame" x="111" y="93" width="257" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zjR-Za-hWM">
+                                <rect key="frame" x="121" y="108" width="89" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="studioButtonDidTouch:" destination="GDj-Vn-7X3" eventType="touchUpInside" id="QBY-1F-ahD"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" opaque="NO" contentMode="scaleToFill" id="eks-OA-ZDU" customClass="DesignableView" customModule="Vimcity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5SA-WF-laB" customClass="DesignableImageView" customModule="Vimcity" customModuleProvider="target">
+                                        <rect key="frame" x="55" y="93" width="313" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.38431372549999998" green="0.38431372549999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rHq-o3-VKD">
+                                        <rect key="frame" x="70" y="200" width="131" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="indoor cycling button 1"/>
+                                        <connections>
+                                            <action selector="indoorCyclingButtonDidTouch:" destination="GDj-Vn-7X3" eventType="touchUpInside" id="WrM-Pi-4CX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bQv-AJ-UQs">
+                                        <rect key="frame" x="70" y="244" width="145" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="personal training 1"/>
+                                        <connections>
+                                            <action selector="personalTrainingButtonDidTouch:" destination="GDj-Vn-7X3" eventType="touchUpInside" id="Jsq-Yd-BZB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Uvp-ft-mAg">
+                                        <rect key="frame" x="224" y="156" width="91" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="cross fit button 1"/>
+                                        <connections>
+                                            <action selector="crossFitButtonDidTouch:" destination="GDj-Vn-7X3" eventType="touchUpInside" id="S1o-1F-2IX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y1Z-Kc-l2c">
+                                        <rect key="frame" x="224" y="200" width="63" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="gym button 1"/>
+                                        <connections>
+                                            <action selector="gymButtonDidTouch:" destination="GDj-Vn-7X3" eventType="touchUpInside" id="aBa-RB-cX0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JBj-rt-Td1">
+                                        <rect key="frame" x="224" y="244" width="73" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="group button 1"/>
+                                        <connections>
+                                            <action selector="groupButtonDidTouch:" destination="GDj-Vn-7X3" eventType="touchUpInside" id="A28-WC-N5m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eRl-N7-nrB">
+                                        <rect key="frame" x="70" y="156" width="64" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Yoga" image="yoga button 1"/>
+                                        <state key="selected" image="yoga button 2"/>
+                                        <state key="highlighted" title="Yoga" image="yoga button 2"/>
+                                        <state key="focused" image="yoga button 2"/>
+                                        <connections>
+                                            <action selector="didTouchYogaButton:" destination="GDj-Vn-7X3" eventType="touchUpInside" id="2OC-Mo-kmK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Km-9j-cNX"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="crossFitButton" destination="Uvp-ft-mAg" id="3fs-26-js6"/>
+                        <outlet property="groupButton" destination="JBj-rt-Td1" id="g9C-Es-0dZ"/>
+                        <outlet property="gymButton" destination="y1Z-Kc-l2c" id="54z-RW-3Jk"/>
+                        <outlet property="indoorCyclingButton" destination="rHq-o3-VKD" id="xTl-NF-k87"/>
+                        <outlet property="mainView" destination="a7Y-9Q-fHv" id="IDK-yS-bPv"/>
+                        <outlet property="personalTrainingButton" destination="bQv-AJ-UQs" id="LHz-mu-MPs"/>
+                        <outlet property="studioButton" destination="zjR-Za-hWM" id="Zb6-kI-kwF"/>
+                        <outlet property="subFilterView" destination="eks-OA-ZDU" id="oqZ-N5-qwM"/>
+                        <outlet property="yogaButton" destination="eRl-N7-nrB" id="Erj-T8-uEQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOa-f3-gQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71.5" y="2243.5"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="C6r-4J-OAS">
@@ -584,29 +709,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu" id="ESE-Xp-cvM">
-                                <rect key="frame" x="19" y="28" width="26" height="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Studios BG Temp" id="5lg-4w-mnQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter" id="3ux-K4-kms">
-                                <rect key="frame" x="329" y="28" width="26" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search" textAlignment="natural" minimumFontSize="17" background="search background" id="8BP-pK-PAm" customClass="DesignableTextField" customModule="Vimcity" customModuleProvider="target">
-                                <rect key="frame" x="64" y="19" width="246" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.35686274509999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.35686274509999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.70590394295302017" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -619,22 +725,22 @@
         <!--Favorites View Controller-->
         <scene sceneID="HCg-lH-pt5">
             <objects>
-                <viewController id="fUb-1v-yBB" customClass="FavoritesViewController" customModule="Vimcity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" id="fUb-1v-yBB" customClass="FavoritesViewController" customModule="Vimcity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hhK-1b-ddu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="116" sectionHeaderHeight="28" sectionFooterHeight="28" id="UF7-t3-xq4">
-                                <rect key="frame" x="0.0" y="86" width="375" height="581"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="116" sectionHeaderHeight="1" sectionFooterHeight="28" id="UF7-t3-xq4">
+                                <rect key="frame" x="0.0" y="32" width="375" height="635"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="116" id="Jfq-Ls-5u0" customClass="FavoritesCell" customModule="Vimcity" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="116"/>
+                                        <rect key="frame" x="0.0" y="65" width="375" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jfq-Ls-5u0" id="Dre-T5-vXf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="DqP-gW-FFw">
@@ -658,7 +764,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="668-EO-HHV">
                         <nil key="title"/>
-                        <barButtonItem key="backBarButtonItem" image="Menu" id="97z-bn-PQ2"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="qHu-1G-2Gq">
+                            <color key="tintColor" red="0.35686274509803922" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                         <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search" textAlignment="natural" minimumFontSize="17" background="search background" id="joS-Rz-I3Z" customClass="DesignableTextField" customModule="Vimcity" customModuleProvider="target">
                             <rect key="frame" x="65" y="4" width="246" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -674,6 +782,9 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
+                        <barButtonItem key="rightBarButtonItem" image="Filter" id="p9O-HV-oEf">
+                            <color key="tintColor" red="0.35686274509803922" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="UF7-t3-xq4" id="S07-kj-VU7"/>
@@ -683,7 +794,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgH-B2-QKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3980.5" y="2243.5"/>
+            <point key="canvasLocation" x="-4086.5" y="2243.5"/>
         </scene>
         <!--Base Tab Bar Controller-->
         <scene sceneID="KZi-Yy-RPc">
@@ -795,40 +906,56 @@
         <!--Item 1-->
         <scene sceneID="o8g-ug-G9Y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ron-Bd-TnQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7nt-fZ-Fje" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 1" id="Vp0-iG-4Sg"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yYB-jh-4PV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="fUb-1v-yBB" kind="relationship" relationship="rootViewController" id="mhY-8O-Jqg"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ron-Bd-TnQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4567.5" y="2243.5"/>
+            <point key="canvasLocation" x="-4505.5" y="2243.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="Background" width="375" height="667"/>
+        <image name="Choose Filter" width="274" height="190"/>
         <image name="Deal of the day" width="373" height="120"/>
+        <image name="Events BG Temp" width="375" height="667"/>
         <image name="Feed" width="355" height="808"/>
         <image name="Filter" width="26" height="24"/>
         <image name="Load Screen" width="375" height="667"/>
-        <image name="Location Profile" width="375" height="667"/>
+        <image name="Location Background Temp" width="375" height="667"/>
+        <image name="Me BG Temp" width="375" height="667"/>
         <image name="Menu" width="26" height="20"/>
+        <image name="Pop Up Deal BG Temp" width="375" height="667"/>
+        <image name="Redeem Cred BG Temp" width="375" height="667"/>
+        <image name="Studios BG Temp" width="375" height="667"/>
         <image name="Walkthru 1" width="375" height="486"/>
         <image name="Walkthru 2" width="375" height="515"/>
         <image name="Walkthru 3" width="375" height="515"/>
         <image name="Walkthru 4" width="375" height="504"/>
+        <image name="cross fit button 1" width="91" height="18"/>
+        <image name="group button 1" width="73" height="21"/>
+        <image name="gym button 1" width="63" height="21"/>
+        <image name="indoor cycling button 1" width="127" height="21"/>
         <image name="map" width="538" height="602"/>
+        <image name="personal training 1" width="145" height="21"/>
         <image name="search background" width="246" height="38"/>
+        <image name="yoga button 1" width="63" height="23"/>
+        <image name="yoga button 2" width="63" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7Su-5Y-Nde"/>
+        <segue reference="CRC-OO-l8r"/>
         <segue reference="lsN-Eo-bJd"/>
     </inferredMetricsTieBreakers>
 </document>

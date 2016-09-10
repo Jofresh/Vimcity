@@ -11,23 +11,15 @@ import UIKit
 class FavoritesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var tableView: UITableView!
-    
     var identities = [String]()
-    
-    
     var images = [UIImage(named: "favorites cell1"), UIImage(named: "favorites cell2"), UIImage(named: "favorites cell3")]
     
     
     override func viewDidLoad() {
-    
     identities = ["A","B","A"]
     
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
