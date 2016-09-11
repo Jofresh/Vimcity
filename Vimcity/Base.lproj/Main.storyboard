@@ -1,81 +1,116 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="7nt-fZ-Fje">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="SAL-IW-moh">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Item3-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FeedViewController" customModule="Vimcity" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bOD-63-Bm2">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Vimcity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j25-Cf-rQQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search" textAlignment="natural" minimumFontSize="17" background="search background" id="JhL-ml-Sbo" customClass="DesignableTextField" customModule="Vimcity" customModuleProvider="target">
-                                <rect key="frame" x="64" y="18" width="246" height="37"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="116" sectionHeaderHeight="1" sectionFooterHeight="1" id="sK2-GR-w29">
+                                <rect key="frame" x="0.0" y="127" width="375" height="491"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.35686274509803922" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.35686274509803922" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Deal of the day" id="m2c-VU-CyP">
-                                <rect key="frame" x="10" y="93" width="355" height="102"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="116" id="YDI-dP-vbH" customClass="HomeCell" customModule="Vimcity" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="65" width="375" height="116"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YDI-dP-vbH" id="J0a-2V-QBd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="116"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0b1-iR-b8a">
+                                                    <rect key="frame" x="10" y="5" width="355" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="8" right="8"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="photo" destination="0b1-iR-b8a" id="50W-Mb-A9n"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="aFN-PI-Vdd"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yp4-cD-7NH"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pop Up Deal" id="xXa-Bp-hhr">
+                                <rect key="frame" x="10" y="81" width="354" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Jz-ir-18L" customClass="DesignableButton" customModule="Vimcity" customModuleProvider="target">
-                                <rect key="frame" x="330" y="572" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="yFZ-QC-DAR">
-                                <rect key="frame" x="10" y="210" width="355" height="457"/>
+                            <view contentMode="scaleToFill" id="pI0-dD-i9J">
+                                <rect key="frame" x="323" y="559" width="52" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feed" id="TeA-x8-aMF">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="457"/>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yf1-Ng-G3K" customClass="DesignableButton" customModule="Vimcity" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="59"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                    </imageView>
+                                        <state key="normal" image="Map View Switch Icon"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                                <real key="value" value="-2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="6gI-MD-x0m" kind="push" id="AtT-QU-gPn"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                            </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu" id="Tm2-C5-wC1">
-                                <rect key="frame" x="19" y="28" width="26" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter" id="wbn-o7-oYj">
-                                <rect key="frame" x="329" y="28" width="26" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vAd-1d-BBA">
-                                <rect key="frame" x="281" y="335" width="74" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item3" id="Kj9-Td-U1F"/>
+                    <navigationItem key="navigationItem" id="Anf-CK-AX2">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="qNV-kw-VDa"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search" textAlignment="natural" minimumFontSize="17" background="search background" id="y5j-nJ-SbF" customClass="DesignableTextField" customModule="Vimcity" customModuleProvider="target">
+                            <rect key="frame" x="65" y="4" width="246" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.35686274509999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.35686274509999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" image="Filter" id="ZHs-U6-VHi"/>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="feed" destination="TeA-x8-aMF" id="oLH-us-Kfe"/>
-                        <outlet property="scrollView" destination="yFZ-QC-DAR" id="NAz-sq-0Od"/>
-                        <outlet property="textField" destination="JhL-ml-Sbo" id="XZS-eA-cFA"/>
+                        <outlet property="mapViewSwitcher" destination="yf1-Ng-G3K" id="QfG-XA-002"/>
+                        <outlet property="tableView" destination="sK2-GR-w29" id="7v4-xx-Phv"/>
+                        <segue destination="v9d-o0-H3t" kind="modal" id="id1-W5-F84"/>
+                        <segue destination="5dY-WM-aan" kind="modal" id="fGV-u5-y5g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2390.5" y="2243.5"/>
+            <point key="canvasLocation" x="-1656.5" y="2243.5"/>
         </scene>
         <!--Location Profile View Controller-->
         <scene sceneID="Wvj-PB-Qu6">
@@ -104,28 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVv-6H-sYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3835.5" y="3111.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="GtL-Mb-Dba">
-            <objects>
-                <viewController id="rjY-ho-k7M" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dYr-Nl-KZq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Studios BG Temp" id="FK0-mR-9nJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.59815436241610742" green="0.94546979865771807" blue="0.90614513422818788" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ciY-cD-Vfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3405.5" y="3111.5"/>
+            <point key="canvasLocation" x="-3620.5" y="3113.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jDP-E7-w2D">
@@ -153,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVq-mR-yLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2977.5" y="3111.5"/>
+            <point key="canvasLocation" x="-3188.5" y="3113.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WV1-Nb-qGv">
@@ -181,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fc8-Og-wbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2549.5" y="3111.5"/>
+            <point key="canvasLocation" x="-2760.5" y="3113.5"/>
         </scene>
         <!--Map Prototype View Controller-->
         <scene sceneID="k71-zf-DC9">
@@ -191,62 +205,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search" textAlignment="natural" minimumFontSize="17" background="search background" id="dMu-he-J6P" customClass="DesignableTextField" customModule="Vimcity" customModuleProvider="target">
-                                <rect key="frame" x="64" y="18" width="246" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.35686274509999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.35686274509999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu" id="qRd-gk-ldX">
-                                <rect key="frame" x="19" y="28" width="26" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter" id="LR1-d4-Hod">
-                                <rect key="frame" x="329" y="28" width="26" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="HV4-Xr-BC0">
-                                <rect key="frame" x="0.0" y="93" width="375" height="574"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" id="JMQ-Uq-dTX" customClass="map">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eQZ-6A-LEw">
                                 <rect key="frame" x="0.0" y="0.0" width="18" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Map Temp" id="SGm-Qc-XV8">
+                                <rect key="frame" x="0.0" y="93" width="375" height="574"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pop Up Deal" id="y9J-gU-ItI">
+                                <rect key="frame" x="10" y="93" width="354" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5ob-mC-TmV"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="map" destination="JMQ-Uq-dTX" id="qNz-wg-4Q3"/>
-                        <outlet property="scrollView" destination="HV4-Xr-BC0" id="stb-Tz-EWx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uo-JL-CZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1962.5" y="2243.5"/>
+            <point key="canvasLocation" x="-1076.5" y="2243.5"/>
         </scene>
-        <!--Item 4-->
+        <!--Events-->
         <scene sceneID="lr7-zR-hHI">
             <objects>
                 <viewController id="1qZ-fT-jgX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8EB-J7-Quw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AIZ-mn-W5E">
@@ -263,19 +249,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.61606019295302017" blue="0.66060192953020136" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 4" id="1KR-xO-oT1"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="event navi icon" id="1KR-xO-oT1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ydn-SU-AK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1220.5" y="2243.5"/>
+            <point key="canvasLocation" x="-140.5" y="2243.5"/>
         </scene>
-        <!--Item 5-->
+        <!--Me-->
         <scene sceneID="6F9-Wl-u6n">
             <objects>
                 <viewController id="oQr-i3-Pvc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HSe-fZ-LKO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uWC-gX-N41">
@@ -292,12 +278,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.62743812919463038" green="1" blue="0.67226824664429519" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 5" id="ckh-JZ-qVt"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="me navi icon" id="ckh-JZ-qVt"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2G-br-mZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-492.5" y="2243.5"/>
+            <point key="canvasLocation" x="439.5" y="2243.5"/>
         </scene>
         <!--Studios Filter View Controller-->
         <scene sceneID="auc-Am-Vn4">
@@ -409,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOa-f3-gQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71.5" y="2243.5"/>
+            <point key="canvasLocation" x="1003.5" y="2243.5"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="C6r-4J-OAS">
@@ -690,44 +676,160 @@
             </objects>
             <point key="canvasLocation" x="-3204.5" y="352.5"/>
         </scene>
-        <!--Item 2-->
+        <!--Schedule View Controller-->
         <scene sceneID="sHC-Ut-3aF">
             <objects>
-                <viewController id="Uce-tl-eFI" sceneMemberID="viewController">
+                <viewController id="Uce-tl-eFI" customClass="ScheduleViewController" customModule="Vimcity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pIy-M0-HTU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="nM1-0g-5EW">
-                                <rect key="frame" x="90" y="618" width="240" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Studios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0NT-bL-3cL">
-                                <rect key="frame" x="158" y="323" width="58" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Studios BG Temp" id="5lg-4w-mnQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Xa-xM-Tkq">
+                                <rect key="frame" x="302" y="156" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bookDidTouch:" destination="Uce-tl-eFI" eventType="touchUpInside" id="LCG-06-C52"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="emt-e3-ESw">
+                                <rect key="frame" x="302" y="241" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bookDidTouch:" destination="Uce-tl-eFI" eventType="touchUpInside" id="SBA-Ct-sUW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lng-mO-pIs">
+                                <rect key="frame" x="302" y="324" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bookDidTouch:" destination="Uce-tl-eFI" eventType="touchUpInside" id="smT-RG-zZX"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" id="72z-ut-aPr">
+                                <rect key="frame" x="0.0" y="354" width="375" height="264"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="WTn-SZ-8Pg">
+                                        <rect key="frame" x="0.0" y="8" width="375" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select A Start Date &amp; Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Tf-9f-O49">
+                                                <rect key="frame" x="80" y="10" width="215" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xRX-bR-sOO">
+                                                <rect key="frame" x="325" y="8" width="42" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Done">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="doneWithDatePickerDidTouch:" destination="Uce-tl-eFI" eventType="touchUpInside" id="NWM-93-M2d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.33333333333333331" green="0.93725490196078431" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <datePicker opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" id="gbP-GV-GLm">
+                                        <rect key="frame" x="0.0" y="48" width="375" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="495244310.31028998">
+                                            <!--2016-09-10 23:51:50 +0000-->
+                                        </date>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                            <!--1970-01-01 11:00:00 +0000-->
+                                        </date>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WWj-GK-f3B">
+                                <rect key="frame" x="309" y="63" width="66" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="calendarButtonDidTouch:" destination="Uce-tl-eFI" eventType="touchUpInside" id="2qW-0J-7al"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Book Class" id="SLg-hn-Eu2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gWn-Yh-tlL">
+                                <rect key="frame" x="21" y="122" width="53" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="exitBookClassDidTouch:" destination="Uce-tl-eFI" eventType="touchUpInside" id="EJL-yb-0Rv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y4f-Ny-c1F">
+                                <rect key="frame" x="265" y="227" width="64" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="buyClassButtonDidTouch:" destination="Uce-tl-eFI" eventType="touchUpInside" id="VWM-4k-cwj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fJs-PB-tj2">
+                                <rect key="frame" x="265" y="320" width="64" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="buyClassButtonDidTouch:" destination="Uce-tl-eFI" eventType="touchUpInside" id="u0O-Rr-Fm9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.70590394295302017" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="4wH-AG-J8L"/>
+                    <navigationItem key="navigationItem" id="ebT-kr-UdE">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="Menu" id="cYB-QL-i4A"/>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="search" textAlignment="natural" minimumFontSize="17" background="search background" id="4SR-8E-DBq" customClass="DesignableTextField" customModule="Vimcity" customModuleProvider="target">
+                            <rect key="frame" x="65" y="4" width="246" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.35686274509999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.35686274509999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" image="Filter" id="3Xe-GL-I9n"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bookClass" destination="SLg-hn-Eu2" id="oDd-jH-Izc"/>
+                        <outlet property="buyClassPass" destination="y4f-Ny-c1F" id="REe-me-Eaj"/>
+                        <outlet property="calendarButton" destination="WWj-GK-f3B" id="YvC-2J-9dz"/>
+                        <outlet property="datePicker" destination="gbP-GV-GLm" id="fmU-Db-7vB"/>
+                        <outlet property="datePickerView" destination="72z-ut-aPr" id="BI3-FJ-Bb5"/>
+                        <outlet property="doneWithDatePicker" destination="xRX-bR-sOO" id="duL-l3-xuz"/>
+                        <outlet property="exitBookClass" destination="gWn-Yh-tlL" id="81d-jt-h5y"/>
+                        <outlet property="textField" destination="4SR-8E-DBq" id="Tv9-5t-pGF"/>
+                        <outletCollection property="bookAClass" destination="6Xa-xM-Tkq" collectionClass="NSMutableArray" id="87Z-1J-fLN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wC9-iu-egI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3190.5" y="2243.5"/>
+            <point key="canvasLocation" x="-2750.5" y="2243.5"/>
         </scene>
         <!--Favorites View Controller-->
         <scene sceneID="HCg-lH-pt5">
             <objects>
                 <viewController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" id="fUb-1v-yBB" customClass="FavoritesViewController" customModule="Vimcity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hhK-1b-ddu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="116" sectionHeaderHeight="1" sectionFooterHeight="28" id="UF7-t3-xq4">
@@ -788,7 +890,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="UF7-t3-xq4" id="S07-kj-VU7"/>
-                        <segue destination="5dY-WM-aan" kind="modal" identifier="A" id="z3I-Le-8H1"/>
+                        <segue destination="5dY-WM-aan" kind="modal" identifier="Favorites A" id="z3I-Le-8H1"/>
                         <segue destination="ohB-yz-U9Z" kind="modal" identifier="B" id="mMg-70-d6L"/>
                     </connections>
                 </viewController>
@@ -800,10 +902,21 @@
         <scene sceneID="KZi-Yy-RPc">
             <objects>
                 <tabBarController id="MsC-Wu-3xg" customClass="BaseTabBarController" customModule="Vimcity" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="qHk-lf-uI4">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="qHk-lf-uI4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.35686274509803922" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.35686274509803922" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="selectedImageTintColor">
+                                <color key="value" red="0.35686274509803922" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="defaultIndex">
@@ -812,15 +925,15 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="7nt-fZ-Fje" kind="relationship" relationship="viewControllers" id="I6J-jp-rEH"/>
-                        <segue destination="Uce-tl-eFI" kind="relationship" relationship="viewControllers" id="XsW-F6-74Q"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="zqL-Jh-eNg"/>
+                        <segue destination="jBk-CT-pQk" kind="relationship" relationship="viewControllers" id="XsW-F6-74Q"/>
+                        <segue destination="yCf-WB-zup" kind="relationship" relationship="viewControllers" id="zqL-Jh-eNg"/>
                         <segue destination="1qZ-fT-jgX" kind="relationship" relationship="viewControllers" id="gQA-mO-fmd"/>
                         <segue destination="oQr-i3-Pvc" kind="relationship" relationship="viewControllers" id="LV0-uF-Bei"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPT-bU-3BP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2977.5" y="1265.5"/>
+            <point key="canvasLocation" x="-2977.5" y="1261.5"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="SHm-If-CY3">
@@ -903,11 +1016,11 @@
             </objects>
             <point key="canvasLocation" x="-2750.5" y="352.5"/>
         </scene>
-        <!--Item 1-->
+        <!--Favorites-->
         <scene sceneID="o8g-ug-G9Y">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7nt-fZ-Fje" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Vp0-iG-4Sg"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorites navi icon" id="Vp0-iG-4Sg"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yYB-jh-4PV">
@@ -925,18 +1038,62 @@
             </objects>
             <point key="canvasLocation" x="-4505.5" y="2243.5"/>
         </scene>
+        <!--Schedule-->
+        <scene sceneID="LIm-Xk-zzr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jBk-CT-pQk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule" image="schedule navi icon" id="4wH-AG-J8L"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B0y-Uk-AHU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.35686274509803922" green="0.792156862745098" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Uce-tl-eFI" kind="relationship" relationship="rootViewController" id="9UW-hg-Te7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQc-GW-Yeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3188.5" y="2243.5"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="SmF-B3-jtx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yCf-WB-zup" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home navi icon" id="Kj9-Td-U1F"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GyX-U1-RJq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.35686274509999999" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XN9-FQ-II4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3i-9O-auq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2075.5" y="2243.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Background" width="375" height="667"/>
+        <image name="Book Class" width="375" height="667"/>
         <image name="Choose Filter" width="274" height="190"/>
-        <image name="Deal of the day" width="373" height="120"/>
         <image name="Events BG Temp" width="375" height="667"/>
-        <image name="Feed" width="355" height="808"/>
         <image name="Filter" width="26" height="24"/>
         <image name="Load Screen" width="375" height="667"/>
         <image name="Location Background Temp" width="375" height="667"/>
+        <image name="Map Temp" width="375" height="667"/>
+        <image name="Map View Switch Icon" width="19" height="24"/>
         <image name="Me BG Temp" width="375" height="667"/>
         <image name="Menu" width="26" height="20"/>
+        <image name="Pop Up Deal" width="373" height="120"/>
         <image name="Pop Up Deal BG Temp" width="375" height="667"/>
         <image name="Redeem Cred BG Temp" width="375" height="667"/>
         <image name="Studios BG Temp" width="375" height="667"/>
@@ -945,17 +1102,22 @@
         <image name="Walkthru 3" width="375" height="515"/>
         <image name="Walkthru 4" width="375" height="504"/>
         <image name="cross fit button 1" width="91" height="18"/>
+        <image name="event navi icon" width="23" height="25"/>
+        <image name="favorites navi icon" width="26" height="25"/>
         <image name="group button 1" width="73" height="21"/>
         <image name="gym button 1" width="63" height="21"/>
+        <image name="home navi icon" width="24" height="25"/>
         <image name="indoor cycling button 1" width="127" height="21"/>
-        <image name="map" width="538" height="602"/>
+        <image name="me navi icon" width="25" height="25"/>
         <image name="personal training 1" width="145" height="21"/>
+        <image name="schedule navi icon" width="26" height="25"/>
         <image name="search background" width="246" height="38"/>
         <image name="yoga button 1" width="63" height="23"/>
         <image name="yoga button 2" width="63" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CRC-OO-l8r"/>
+        <segue reference="7Su-5Y-Nde"/>
         <segue reference="lsN-Eo-bJd"/>
+        <segue reference="fGV-u5-y5g"/>
     </inferredMetricsTieBreakers>
 </document>

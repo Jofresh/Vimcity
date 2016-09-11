@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BF2573DC1D8488E8009266B7 /* StudiosFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573DB1D8488E8009266B7 /* StudiosFilterViewController.swift */; };
+		BF2573DE1D84D5A2009266B7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */; };
+		BF2573E21D850934009266B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573E11D850934009266B7 /* HomeViewController.swift */; };
+		BF2573E41D8509BA009266B7 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573E31D8509BA009266B7 /* HomeCell.swift */; };
 		BF3C9A631D806375001A5230 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C9A621D806375001A5230 /* FavoritesViewController.swift */; };
 		BF3C9A651D80663D001A5230 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C9A641D80663D001A5230 /* FavoritesCell.swift */; };
 		BF3C9A6B1D807BD7001A5230 /* LocationProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */; };
@@ -49,7 +52,6 @@
 		BF90966D1D7382770053880F /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096501D7382770053880F /* TransitionManager.swift */; };
 		BF90966E1D7382770053880F /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096511D7382770053880F /* TransitionZoom.swift */; };
 		BF90966F1D7382770053880F /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096521D7382770053880F /* UnwindSegue.swift */; };
-		BF9096711D7392B90053880F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096701D7392B90053880F /* FeedViewController.swift */; };
 		BF9096741D73FF130053880F /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096721D73FF130053880F /* BWWalkthroughPageViewController.swift */; };
 		BF9096751D73FF130053880F /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096731D73FF130053880F /* BWWalkthroughViewController.swift */; };
 		BF9096771D7415A70053880F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096761D7415A70053880F /* MainViewController.swift */; };
@@ -76,6 +78,9 @@
 
 /* Begin PBXFileReference section */
 		BF2573DB1D8488E8009266B7 /* StudiosFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudiosFilterViewController.swift; sourceTree = "<group>"; };
+		BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		BF2573E11D850934009266B7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF2573E31D8509BA009266B7 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		BF3C9A621D806375001A5230 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		BF3C9A641D80663D001A5230 /* FavoritesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationProfileViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +129,6 @@
 		BF9096501D7382770053880F /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		BF9096511D7382770053880F /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		BF9096521D7382770053880F /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
-		BF9096701D7392B90053880F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		BF9096721D73FF130053880F /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughPageViewController.swift; path = Spring/BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		BF9096731D73FF130053880F /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BWWalkthroughViewController.swift; path = Spring/BWWalkthroughViewController.swift; sourceTree = "<group>"; };
 		BF9096761D7415A70053880F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
@@ -201,9 +205,12 @@
 			children = (
 				BF9096341D7382770053880F /* Spring */,
 				BF3C9A671D807815001A5230 /* Walkthru */,
-				BF3C9A661D8077D2001A5230 /* Favorites */,
-				BF9096041D737D2F0053880F /* AppDelegate.swift */,
 				BF9096081D737D2F0053880F /* Main.storyboard */,
+				BF9096041D737D2F0053880F /* AppDelegate.swift */,
+				BF3C9A661D8077D2001A5230 /* Favorites */,
+				BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */,
+				BF2573E11D850934009266B7 /* HomeViewController.swift */,
+				BF2573E31D8509BA009266B7 /* HomeCell.swift */,
 				BF9096061D737D2F0053880F /* ViewController.swift */,
 				BF2573DB1D8488E8009266B7 /* StudiosFilterViewController.swift */,
 				BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */,
@@ -211,7 +218,6 @@
 				BF43798E1D757A0E00C36398 /* MapPrototypeViewController.swift */,
 				BF43798C1D75625B00C36398 /* LoginViewController.swift */,
 				BF9096781D746F210053880F /* SignUpViewController.swift */,
-				BF9096701D7392B90053880F /* FeedViewController.swift */,
 				BF90960B1D737D2F0053880F /* Assets.xcassets */,
 				BF90960D1D737D2F0053880F /* LaunchScreen.storyboard */,
 				BF9096101D737D2F0053880F /* Info.plist */,
@@ -408,11 +414,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF2573E41D8509BA009266B7 /* HomeCell.swift in Sources */,
 				BF9096691D7382770053880F /* SpringLabel.swift in Sources */,
 				BF90965E1D7382770053880F /* ImageLoader.swift in Sources */,
 				BFD29AC51D776D83000FEDF8 /* BaseTabBarController.swift in Sources */,
 				BF9096631D7382770053880F /* Misc.swift in Sources */,
 				BF9096741D73FF130053880F /* BWWalkthroughPageViewController.swift in Sources */,
+				BF2573E21D850934009266B7 /* HomeViewController.swift in Sources */,
 				BF9096581D7382770053880F /* DesignableImageView.swift in Sources */,
 				BF9096681D7382770053880F /* SpringImageView.swift in Sources */,
 				BF9096071D737D2F0053880F /* ViewController.swift in Sources */,
@@ -438,9 +446,9 @@
 				BF43798F1D757A0E00C36398 /* MapPrototypeViewController.swift in Sources */,
 				BF90965A1D7382770053880F /* DesignableTabBarController.swift in Sources */,
 				BF9096551D7382770053880F /* AutoTextView.swift in Sources */,
-				BF9096711D7392B90053880F /* FeedViewController.swift in Sources */,
 				BF90965C1D7382770053880F /* DesignableTextView.swift in Sources */,
 				BF43798D1D75625B00C36398 /* LoginViewController.swift in Sources */,
+				BF2573DE1D84D5A2009266B7 /* ScheduleViewController.swift in Sources */,
 				BF3C9A651D80663D001A5230 /* FavoritesCell.swift in Sources */,
 				BF9096591D7382770053880F /* DesignableLabel.swift in Sources */,
 				BF90966F1D7382770053880F /* UnwindSegue.swift in Sources */,
