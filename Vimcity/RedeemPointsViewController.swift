@@ -1,20 +1,18 @@
 //
-//  LocationProfileViewController.swift
+//  RedeemPointsViewController.swift
 //  Vimcity
 //
-//  Created by Josef Myers on 9/7/16.
+//  Created by Josef Myers on 9/11/16.
 //  Copyright © 2016 thatlevel. All rights reserved.
 //
 
 import UIKit
 
-class LocationProfileViewController: UIViewController {
-    
+class RedeemPointsViewController: UIViewController {
+
     @IBAction func backButtonDidTouch(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

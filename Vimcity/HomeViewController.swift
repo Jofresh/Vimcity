@@ -1,5 +1,5 @@
 //
-//  FavoritesViewController.swift
+//  HomeViewController.swift
 //  Vimcity
 //
 //  Created by Josef Myers on 9/7/16.

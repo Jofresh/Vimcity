@@ -11,6 +11,7 @@
 		BF2573DE1D84D5A2009266B7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */; };
 		BF2573E21D850934009266B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573E11D850934009266B7 /* HomeViewController.swift */; };
 		BF2573E41D8509BA009266B7 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573E31D8509BA009266B7 /* HomeCell.swift */; };
+		BF2573E61D85F791009266B7 /* RedeemPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573E51D85F791009266B7 /* RedeemPointsViewController.swift */; };
 		BF3C9A631D806375001A5230 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C9A621D806375001A5230 /* FavoritesViewController.swift */; };
 		BF3C9A651D80663D001A5230 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C9A641D80663D001A5230 /* FavoritesCell.swift */; };
 		BF3C9A6B1D807BD7001A5230 /* LocationProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */; };
@@ -57,6 +58,9 @@
 		BF9096771D7415A70053880F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096761D7415A70053880F /* MainViewController.swift */; };
 		BF9096791D746F210053880F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096781D746F210053880F /* SignUpViewController.swift */; };
 		BFD29AC51D776D83000FEDF8 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */; };
+		BFFE544E1D8623F9004283BF /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE544D1D8623F9004283BF /* FollowViewController.swift */; };
+		BFFE54501D862453004283BF /* FollowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE544F1D862453004283BF /* FollowCell.swift */; };
+		BFFE54521D86711B004283BF /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE54511D86711B004283BF /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,7 @@
 		BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		BF2573E11D850934009266B7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BF2573E31D8509BA009266B7 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		BF2573E51D85F791009266B7 /* RedeemPointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemPointsViewController.swift; sourceTree = "<group>"; };
 		BF3C9A621D806375001A5230 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		BF3C9A641D80663D001A5230 /* FavoritesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationProfileViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +139,9 @@
 		BF9096761D7415A70053880F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		BF9096781D746F210053880F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		BFFE544D1D8623F9004283BF /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		BFFE544F1D862453004283BF /* FollowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowCell.swift; sourceTree = "<group>"; };
+		BFFE54511D86711B004283BF /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +214,10 @@
 				BF9096341D7382770053880F /* Spring */,
 				BF3C9A671D807815001A5230 /* Walkthru */,
 				BF9096081D737D2F0053880F /* Main.storyboard */,
+				BFFE54511D86711B004283BF /* SettingsController.swift */,
+				BFFE544D1D8623F9004283BF /* FollowViewController.swift */,
+				BFFE544F1D862453004283BF /* FollowCell.swift */,
+				BF2573E51D85F791009266B7 /* RedeemPointsViewController.swift */,
 				BF9096041D737D2F0053880F /* AppDelegate.swift */,
 				BF3C9A661D8077D2001A5230 /* Favorites */,
 				BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */,
@@ -424,11 +436,14 @@
 				BF9096581D7382770053880F /* DesignableImageView.swift in Sources */,
 				BF9096681D7382770053880F /* SpringImageView.swift in Sources */,
 				BF9096071D737D2F0053880F /* ViewController.swift in Sources */,
+				BF2573E61D85F791009266B7 /* RedeemPointsViewController.swift in Sources */,
 				BF9096641D7382770053880F /* SoundPlayer.swift in Sources */,
+				BFFE544E1D8623F9004283BF /* FollowViewController.swift in Sources */,
 				BF90966B1D7382770053880F /* SpringTextView.swift in Sources */,
 				BF9096051D737D2F0053880F /* AppDelegate.swift in Sources */,
 				BF90965D1D7382770053880F /* DesignableView.swift in Sources */,
 				BF9096661D7382770053880F /* SpringAnimation.swift in Sources */,
+				BFFE54521D86711B004283BF /* SettingsController.swift in Sources */,
 				BF3C9A631D806375001A5230 /* FavoritesViewController.swift in Sources */,
 				BF9096771D7415A70053880F /* MainViewController.swift in Sources */,
 				BF9096751D73FF130053880F /* BWWalkthroughViewController.swift in Sources */,
@@ -456,6 +471,7 @@
 				BF9096561D7382770053880F /* BlurView.swift in Sources */,
 				BF90966C1D7382770053880F /* SpringView.swift in Sources */,
 				BF90966E1D7382770053880F /* TransitionZoom.swift in Sources */,
+				BFFE54501D862453004283BF /* FollowCell.swift in Sources */,
 				BF3C9A6B1D807BD7001A5230 /* LocationProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
