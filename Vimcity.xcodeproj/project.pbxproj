@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0FE0661D86EBD2005816F0 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0651D86EBD2005816F0 /* EventsViewController.swift */; };
+		BF0FE0691D86ED77005816F0 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0681D86ED77005816F0 /* EventCell.swift */; };
+		BF0FE06C1D872BDD005816F0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE06B1D872BDD005816F0 /* MenuViewController.swift */; };
+		BF0FE06E1D873A7D005816F0 /* UserDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE06D1D873A7D005816F0 /* UserDirectoryViewController.swift */; };
+		BF0FE0701D873C0A005816F0 /* CauseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE06F1D873C0A005816F0 /* CauseViewController.swift */; };
+		BF0FE0721D873C84005816F0 /* FreeClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0711D873C84005816F0 /* FreeClassViewController.swift */; };
+		BF0FE0741D873E0F005816F0 /* WellnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0731D873E0F005816F0 /* WellnessViewController.swift */; };
+		BF0FE0761D87404E005816F0 /* PopUpDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0751D87404E005816F0 /* PopUpDealViewController.swift */; };
+		BF0FE0781D874661005816F0 /* EventPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0771D874661005816F0 /* EventPageController.swift */; };
+		BF0FE07A1D874B9B005816F0 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0791D874B9B005816F0 /* MeViewController.swift */; };
+		BF0FE07C1D875117005816F0 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE07B1D875117005816F0 /* UserProfileViewController.swift */; };
+		BF0FE07E1D87524D005816F0 /* InsideMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE07D1D87524D005816F0 /* InsideMessageViewController.swift */; };
+		BF0FE0801D875371005816F0 /* MessageAndInvitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE07F1D875371005816F0 /* MessageAndInvitesViewController.swift */; };
+		BF0FE0821D875D23005816F0 /* PremiumProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0811D875D23005816F0 /* PremiumProfileViewController.swift */; };
+		BF0FE0841D8764F7005816F0 /* WearableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0831D8764F7005816F0 /* WearableViewController.swift */; };
 		BF2573DC1D8488E8009266B7 /* StudiosFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573DB1D8488E8009266B7 /* StudiosFilterViewController.swift */; };
 		BF2573DE1D84D5A2009266B7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */; };
 		BF2573E21D850934009266B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573E11D850934009266B7 /* HomeViewController.swift */; };
@@ -81,6 +96,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF0FE0651D86EBD2005816F0 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		BF0FE0681D86ED77005816F0 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		BF0FE06B1D872BDD005816F0 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BF0FE06D1D873A7D005816F0 /* UserDirectoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDirectoryViewController.swift; sourceTree = "<group>"; };
+		BF0FE06F1D873C0A005816F0 /* CauseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CauseViewController.swift; sourceTree = "<group>"; };
+		BF0FE0711D873C84005816F0 /* FreeClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeClassViewController.swift; sourceTree = "<group>"; };
+		BF0FE0731D873E0F005816F0 /* WellnessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WellnessViewController.swift; sourceTree = "<group>"; };
+		BF0FE0751D87404E005816F0 /* PopUpDealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpDealViewController.swift; sourceTree = "<group>"; };
+		BF0FE0771D874661005816F0 /* EventPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPageController.swift; sourceTree = "<group>"; };
+		BF0FE0791D874B9B005816F0 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		BF0FE07B1D875117005816F0 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		BF0FE07D1D87524D005816F0 /* InsideMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsideMessageViewController.swift; sourceTree = "<group>"; };
+		BF0FE07F1D875371005816F0 /* MessageAndInvitesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageAndInvitesViewController.swift; sourceTree = "<group>"; };
+		BF0FE0811D875D23005816F0 /* PremiumProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PremiumProfileViewController.swift; sourceTree = "<group>"; };
+		BF0FE0831D8764F7005816F0 /* WearableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WearableViewController.swift; sourceTree = "<group>"; };
 		BF2573DB1D8488E8009266B7 /* StudiosFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudiosFilterViewController.swift; sourceTree = "<group>"; };
 		BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		BF2573E11D850934009266B7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +199,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF0FE0671D86ED4C005816F0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BF2573E11D850934009266B7 /* HomeViewController.swift */,
+				BF2573E31D8509BA009266B7 /* HomeCell.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		BF0FE06A1D86ED86005816F0 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				BF0FE0681D86ED77005816F0 /* EventCell.swift */,
+				BF0FE0651D86EBD2005816F0 /* EventsViewController.swift */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
 		BF3C9A661D8077D2001A5230 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +239,7 @@
 		BF9095F81D737D2F0053880F = {
 			isa = PBXGroup;
 			children = (
+				BF0FE06F1D873C0A005816F0 /* CauseViewController.swift */,
 				BF9096031D737D2F0053880F /* Vimcity */,
 				BF9096181D737D2F0053880F /* VimcityTests */,
 				BF9096231D737D2F0053880F /* VimcityUITests */,
@@ -214,16 +263,28 @@
 				BF9096341D7382770053880F /* Spring */,
 				BF3C9A671D807815001A5230 /* Walkthru */,
 				BF9096081D737D2F0053880F /* Main.storyboard */,
-				BFFE54511D86711B004283BF /* SettingsController.swift */,
-				BFFE544D1D8623F9004283BF /* FollowViewController.swift */,
+				BF0FE0831D8764F7005816F0 /* WearableViewController.swift */,
+				BF0FE0811D875D23005816F0 /* PremiumProfileViewController.swift */,
+				BF0FE07F1D875371005816F0 /* MessageAndInvitesViewController.swift */,
+				BF0FE07D1D87524D005816F0 /* InsideMessageViewController.swift */,
+				BF0FE07B1D875117005816F0 /* UserProfileViewController.swift */,
+				BF0FE0791D874B9B005816F0 /* MeViewController.swift */,
+				BF0FE0771D874661005816F0 /* EventPageController.swift */,
+				BF0FE0751D87404E005816F0 /* PopUpDealViewController.swift */,
+				BF0FE0731D873E0F005816F0 /* WellnessViewController.swift */,
+				BF0FE0711D873C84005816F0 /* FreeClassViewController.swift */,
+				BF0FE06D1D873A7D005816F0 /* UserDirectoryViewController.swift */,
+				BF0FE06B1D872BDD005816F0 /* MenuViewController.swift */,
+				BF3C9A661D8077D2001A5230 /* Favorites */,
+				BF0FE0671D86ED4C005816F0 /* Home */,
+				BF0FE06A1D86ED86005816F0 /* Events */,
 				BFFE544F1D862453004283BF /* FollowCell.swift */,
+				BFFE544D1D8623F9004283BF /* FollowViewController.swift */,
+				BFFE54511D86711B004283BF /* SettingsController.swift */,
 				BF2573E51D85F791009266B7 /* RedeemPointsViewController.swift */,
 				BF9096041D737D2F0053880F /* AppDelegate.swift */,
-				BF3C9A661D8077D2001A5230 /* Favorites */,
-				BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */,
-				BF2573E11D850934009266B7 /* HomeViewController.swift */,
-				BF2573E31D8509BA009266B7 /* HomeCell.swift */,
 				BF9096061D737D2F0053880F /* ViewController.swift */,
+				BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */,
 				BF2573DB1D8488E8009266B7 /* StudiosFilterViewController.swift */,
 				BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */,
 				BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */,
@@ -432,6 +493,9 @@
 				BFD29AC51D776D83000FEDF8 /* BaseTabBarController.swift in Sources */,
 				BF9096631D7382770053880F /* Misc.swift in Sources */,
 				BF9096741D73FF130053880F /* BWWalkthroughPageViewController.swift in Sources */,
+				BF0FE0691D86ED77005816F0 /* EventCell.swift in Sources */,
+				BF0FE0741D873E0F005816F0 /* WellnessViewController.swift in Sources */,
+				BF0FE07E1D87524D005816F0 /* InsideMessageViewController.swift in Sources */,
 				BF2573E21D850934009266B7 /* HomeViewController.swift in Sources */,
 				BF9096581D7382770053880F /* DesignableImageView.swift in Sources */,
 				BF9096681D7382770053880F /* SpringImageView.swift in Sources */,
@@ -441,7 +505,11 @@
 				BFFE544E1D8623F9004283BF /* FollowViewController.swift in Sources */,
 				BF90966B1D7382770053880F /* SpringTextView.swift in Sources */,
 				BF9096051D737D2F0053880F /* AppDelegate.swift in Sources */,
+				BF0FE0721D873C84005816F0 /* FreeClassViewController.swift in Sources */,
+				BF0FE0701D873C0A005816F0 /* CauseViewController.swift in Sources */,
+				BF0FE0761D87404E005816F0 /* PopUpDealViewController.swift in Sources */,
 				BF90965D1D7382770053880F /* DesignableView.swift in Sources */,
+				BF0FE07A1D874B9B005816F0 /* MeViewController.swift in Sources */,
 				BF9096661D7382770053880F /* SpringAnimation.swift in Sources */,
 				BFFE54521D86711B004283BF /* SettingsController.swift in Sources */,
 				BF3C9A631D806375001A5230 /* FavoritesViewController.swift in Sources */,
@@ -454,19 +522,27 @@
 				BF9096571D7382770053880F /* DesignableButton.swift in Sources */,
 				BF90965B1D7382770053880F /* DesignableTextField.swift in Sources */,
 				BF9096531D7382770053880F /* AsyncButton.swift in Sources */,
+				BF0FE06E1D873A7D005816F0 /* UserDirectoryViewController.swift in Sources */,
 				BF9096601D7382770053880F /* KeyboardLayoutConstraint.swift in Sources */,
 				BF9096671D7382770053880F /* SpringButton.swift in Sources */,
 				BF9096791D746F210053880F /* SignUpViewController.swift in Sources */,
 				BF9096541D7382770053880F /* AsyncImageView.swift in Sources */,
+				BF0FE07C1D875117005816F0 /* UserProfileViewController.swift in Sources */,
 				BF43798F1D757A0E00C36398 /* MapPrototypeViewController.swift in Sources */,
+				BF0FE0781D874661005816F0 /* EventPageController.swift in Sources */,
 				BF90965A1D7382770053880F /* DesignableTabBarController.swift in Sources */,
 				BF9096551D7382770053880F /* AutoTextView.swift in Sources */,
 				BF90965C1D7382770053880F /* DesignableTextView.swift in Sources */,
 				BF43798D1D75625B00C36398 /* LoginViewController.swift in Sources */,
+				BF0FE0841D8764F7005816F0 /* WearableViewController.swift in Sources */,
 				BF2573DE1D84D5A2009266B7 /* ScheduleViewController.swift in Sources */,
 				BF3C9A651D80663D001A5230 /* FavoritesCell.swift in Sources */,
+				BF0FE0801D875371005816F0 /* MessageAndInvitesViewController.swift in Sources */,
 				BF9096591D7382770053880F /* DesignableLabel.swift in Sources */,
+				BF0FE06C1D872BDD005816F0 /* MenuViewController.swift in Sources */,
 				BF90966F1D7382770053880F /* UnwindSegue.swift in Sources */,
+				BF0FE0821D875D23005816F0 /* PremiumProfileViewController.swift in Sources */,
+				BF0FE0661D86EBD2005816F0 /* EventsViewController.swift in Sources */,
 				BF90966D1D7382770053880F /* TransitionManager.swift in Sources */,
 				BF9096561D7382770053880F /* BlurView.swift in Sources */,
 				BF90966C1D7382770053880F /* SpringView.swift in Sources */,

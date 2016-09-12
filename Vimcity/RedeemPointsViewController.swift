@@ -10,6 +10,9 @@ import UIKit
 
 class RedeemPointsViewController: UIViewController {
 
+    @IBAction func RedeemCreditButtonDidTouch(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     @IBAction func backButtonDidTouch(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }

@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var textField: DesignableTextField!
     @IBOutlet weak var mapViewSwitcher: DesignableButton!
     @IBOutlet var tableView: UITableView!
     var identities = [String]()
@@ -17,7 +18,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     override func viewDidLoad() {
-    identities = ["A","B","A"]
+        
+    identities = ["Home A","Premium","Home A", "Home A","Home A","Home A", "Home A"]
     
     }
 

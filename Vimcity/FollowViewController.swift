@@ -10,6 +10,9 @@ import UIKit
 
 class FollowViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBAction func backButtonDidTouch(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     @IBOutlet var tableView: UITableView!
     var identities = [String]()
     var images = [UIImage(named: "Listed User 1"), UIImage(named: "Listed User 2"), UIImage(named: "Listed User 3"), UIImage(named: "Listed User 4"), UIImage(named: "Listed User 5"), UIImage(named: "Listed User 6"), UIImage(named: "Listed User 7"), UIImage(named: "Listed User 8"), UIImage(named: "Listed User 9"), UIImage(named: "Listed User 10"), UIImage(named: "Listed User 11"), UIImage(named: "Listed User 12"), UIImage(named: "Listed User 13")]

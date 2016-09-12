@@ -10,10 +10,13 @@ import UIKit
 
 class SettingsController: UITableViewController {
 
+    @IBAction func backButtonDidTouch(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.backgroundView = UIImageView(image: UIImage(named: "Background"))
+        tableView.backgroundView = UIImageView(image: UIImage(named: "background with white top"))
 }
     override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         

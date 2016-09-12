@@ -10,19 +10,20 @@ import UIKit
 
 class FavoritesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var textField: DesignableTextField!
     @IBOutlet var tableView: UITableView!
     var identities = [String]()
-    var images = [UIImage(named: "favorites cell1"), UIImage(named: "favorites cell2"), UIImage(named: "favorites cell3")]
-    
+    var images = [UIImage(named: "Location 5"), UIImage(named: "Location 4"), UIImage(named: "Location 3"), UIImage(named: "Location 2"), UIImage(named: "Location 1")]
     
     override func viewDidLoad() {
-    identities = ["A","B","A"]
+       
+        
+    identities = ["Favorites A","Favorites A", "Favorites A", "Premium", "Favorites A"]
     
     }
 
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -39,4 +40,6 @@ class FavoritesViewController: UIViewController, UITableViewDataSource, UITableV
         let vcName = identities[indexPath.row]
         performSegueWithIdentifier(vcName, sender: self)
 }
+    
+
 }
