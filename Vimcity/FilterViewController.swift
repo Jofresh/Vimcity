@@ -1,5 +1,5 @@
 //
-//  StudiosFilterViewController.swift
+//  FilterViewController.swift
 //  Vimcity
 //
 //  Created by Josef Myers on 9/10/16.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class StudiosFilterViewController: UIViewController {
+class FilterViewController: UIViewController {
     
 
     @IBOutlet var mainView: DesignableView!
+    @IBOutlet weak var filterView: UIView!
     @IBOutlet weak var studioButton: UIButton!
     @IBOutlet weak var subFilterView: UIView!
     @IBOutlet weak var yogaButton: UIButton!
@@ -28,6 +29,7 @@ class StudiosFilterViewController: UIViewController {
     
     @IBAction func studioButtonDidTouch(sender: AnyObject) {
     subFilterView.hidden = false
+        filterView.hidden = true
     }
     
     @IBAction func didTouchYogaButton(sender: AnyObject) {

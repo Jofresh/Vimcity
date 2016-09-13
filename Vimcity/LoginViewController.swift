@@ -14,16 +14,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         textField.delegate = self
         textField1.delegate = self
-        
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
-        
-    }
+
+}
     
-    func dismissKeyboard() {
+    func dismissKeyboard(){
         textField.resignFirstResponder()
         textField1.resignFirstResponder()
+        
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -32,4 +33,5 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
+    
 }

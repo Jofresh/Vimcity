@@ -8,19 +8,34 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class FavoritesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate{
+    
+    
 
-    @IBOutlet weak var textField: DesignableTextField!
+    @IBOutlet weak var textField: UITextField!
     @IBOutlet var tableView: UITableView!
     var identities = [String]()
     var images = [UIImage(named: "Location 5"), UIImage(named: "Location 4"), UIImage(named: "Location 3"), UIImage(named: "Location 2"), UIImage(named: "Location 1")]
     
     override func viewDidLoad() {
-       
+    textField.delegate = self
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
+
         
     identities = ["Favorites A","Favorites A", "Favorites A", "Premium", "Favorites A"]
     
     }
+    
+    func dismissKeyboard(){
+        textField.resignFirstResponder()
+        
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5

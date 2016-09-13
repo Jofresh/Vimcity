@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventsViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate {
+class EventsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var textField: DesignableTextField!
     @IBOutlet var tableView: UITableView!
@@ -17,22 +17,10 @@ class EventsViewController: UIViewController, UITextFieldDelegate, UITableViewDa
     
     
     override func viewDidLoad() {
-        textField.delegate = self
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
         
         identities = ["Event A","Event A","Event A"]
         
     }
-    
-    func dismissKeyboard() {
-        textField.resignFirstResponder()
-    }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3

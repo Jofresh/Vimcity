@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MapPrototypeViewController: UIViewController, UITextFieldDelegate {
+class MapPrototypeViewController: UIViewController {
 
     @IBOutlet weak var textField: DesignableTextField!
     @IBOutlet weak var mapButton: UIButton!
@@ -19,22 +19,9 @@ class MapPrototypeViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.delegate = self
         
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
-
     }
-    func dismissKeyboard() {
-        textField.resignFirstResponder()
-       
-    }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        
-        return true
-    }
-
+   
     @IBAction func mapButtonDidTouch(sender: AnyObject) {
         if mapIndicatorView.hidden == true {
            mapIndicatorView.hidden = false

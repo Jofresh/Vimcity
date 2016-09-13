@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ScheduleViewController: UIViewController, UITextFieldDelegate {
+class ScheduleViewController: UIViewController
+{
    
     @IBOutlet weak var textField: DesignableTextField!
     @IBOutlet var bookAClass: [UIButton]!
@@ -22,22 +23,7 @@ class ScheduleViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.delegate = self
-     
-        
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
-        
-    }
     
-    func dismissKeyboard() {
-        textField.resignFirstResponder()
-     
-    }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-
     }
     @IBAction func calendarButtonDidTouch(sender: AnyObject) {
         datePickerView.hidden = false
