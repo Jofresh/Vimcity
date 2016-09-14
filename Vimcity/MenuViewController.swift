@@ -16,5 +16,8 @@ class MenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func backButtonDidTouch(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)    
+    }
 
 }

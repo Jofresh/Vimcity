@@ -8,13 +8,34 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-           }
 
-   }
+    textField.delegate = self
+    textField1.delegate = self
+    textField2.delegate = self
+    self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
+    
+}
+
+func dismissKeyboard(){
+    textField.resignFirstResponder()
+    textField1.resignFirstResponder()
+    textField2.resignFirstResponder()
+    
+}
+
+func textFieldShouldReturn(textField: UITextField) -> Bool {
+    textField.resignFirstResponder()
+    textField1.resignFirstResponder()
+    textField2.resignFirstResponder()
+    return true
+}
+
+
+}
