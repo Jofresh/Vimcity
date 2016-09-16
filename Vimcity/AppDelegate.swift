@@ -20,10 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         UIApplication.sharedApplication().statusBarStyle = .LightContent
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarPosition: .Any, barMetrics: .Default)
         UINavigationBar.appearance().shadowImage = UIImage()
-        
         return true
+        
+        // use "UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarPosition: .Any, barMetrics: .Default)" to hide status bar background
         
        
     }
