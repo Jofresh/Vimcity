@@ -15,6 +15,22 @@ class PopUpDealViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     @IBAction func redeemDealButtonDidTouch(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)  
+        openUpgradeAlert()
     }
+    
+    func openUpgradeAlert() {
+        let alert = UIAlertController(title: "Upgrade To Premium", message: "In order to redeem Pop Up Deals, you need to upgrade to a Premium account.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
+        
+        alert.addAction(cancel)
+        
+        let go = UIAlertAction(title: "Go!", style: UIAlertActionStyle.Default) { (action: UIAlertAction) in
+            print("Go!") }
+        
+        alert.addAction(go)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+
 }
