@@ -14,18 +14,18 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var mapViewSwitcher: DesignableButton!
     @IBOutlet var tableView: UITableView!
     var identities = [String]()
-    var images = [UIImage(named: "Location 1"), UIImage(named: "Location 2"), UIImage(named: "Location 3"), UIImage(named: "Location 4"), UIImage(named: "Location 5"), UIImage(named: "Location 6"), UIImage(named: "Location 7")]
+    var images = [UIImage(named: "Location 1"), UIImage(named: "Fit Location 1"), UIImage(named: "Retail Location 1"), UIImage(named: "Service Location 1"), UIImage(named: "Location 2"), UIImage(named: "Fit Location 2"), UIImage(named: "Retail Location 2"),UIImage(named: "Service Location 2"), UIImage(named: "Location 3"), UIImage(named: "Fit Location 3"), UIImage(named: "Retail Location 3"), UIImage(named: "Service Location 3"), UIImage(named: "Location 4"), UIImage(named: "Fit Location 4"), UIImage(named: "Location 5"), UIImage(named: "Fit Location 5"), UIImage(named: "Retail Location 5"), UIImage(named: "Service Location 5"), UIImage(named: "Location 6"), UIImage(named: "Fit Location 6"), UIImage(named: "Retail Location 6"),UIImage(named: "Service Location 6"), UIImage(named: "Location 7"), UIImage(named: "Fit Location 7"), UIImage(named: "Retail Location 7"), UIImage(named: "Service Location 7"), UIImage(named: "Fit Location 8"), UIImage(named: "Retail Location 8"), UIImage(named: "Service Location 8"), UIImage(named: "Retail Location 9")]
     
     
     override func viewDidLoad() {
         
-    identities = ["Home A","Premium","Home A", "Home A","Home A","Home A", "Home A"]
+    identities = ["Home A","Home A","Home A", "Home A","Premium","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A"]
     
     }
 
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return images.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

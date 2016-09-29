@@ -25,6 +25,10 @@
 		BF0FE0821D875D23005816F0 /* PremiumProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0811D875D23005816F0 /* PremiumProfileViewController.swift */; };
 		BF0FE0841D8764F7005816F0 /* WearableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0831D8764F7005816F0 /* WearableViewController.swift */; };
 		BF0FE0861D88556E005816F0 /* DismissKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0851D88556E005816F0 /* DismissKeyboardExtension.swift */; };
+		BF16060A1D9D3F3400A7CD9B /* FiveLoavesWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1606091D9D3F3400A7CD9B /* FiveLoavesWebview.swift */; };
+		BF16060C1D9D42C900A7CD9B /* BridgeRunWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16060B1D9D42C900A7CD9B /* BridgeRunWebview.swift */; };
+		BF16060E1D9D454C00A7CD9B /* GreenHeartWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16060D1D9D454C00A7CD9B /* GreenHeartWebview.swift */; };
+		BF1606101D9D46B800A7CD9B /* BikramWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16060F1D9D46B800A7CD9B /* BikramWebview.swift */; };
 		BF2573DC1D8488E8009266B7 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573DB1D8488E8009266B7 /* FilterViewController.swift */; };
 		BF2573DE1D84D5A2009266B7 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */; };
 		BF2573E21D850934009266B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2573E11D850934009266B7 /* HomeViewController.swift */; };
@@ -77,6 +81,7 @@
 		BFBE70421D8B05E1004D47BB /* PersonalInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE70411D8B05E1004D47BB /* PersonalInfoTableViewController.swift */; };
 		BFBE70441D8B3878004D47BB /* PasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE70431D8B3878004D47BB /* PasswordTableViewController.swift */; };
 		BFD29AC51D776D83000FEDF8 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */; };
+		BFE83A9F1D9CA46400AD9E14 /* Mex1Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE83A9E1D9CA46400AD9E14 /* Mex1Webview.swift */; };
 		BFFE544E1D8623F9004283BF /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE544D1D8623F9004283BF /* FollowViewController.swift */; };
 		BFFE54501D862453004283BF /* FollowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE544F1D862453004283BF /* FollowCell.swift */; };
 		BFFE54521D86711B004283BF /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE54511D86711B004283BF /* SettingsController.swift */; };
@@ -118,6 +123,10 @@
 		BF0FE0811D875D23005816F0 /* PremiumProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PremiumProfileViewController.swift; sourceTree = "<group>"; };
 		BF0FE0831D8764F7005816F0 /* WearableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WearableViewController.swift; sourceTree = "<group>"; };
 		BF0FE0851D88556E005816F0 /* DismissKeyboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissKeyboardExtension.swift; sourceTree = "<group>"; };
+		BF1606091D9D3F3400A7CD9B /* FiveLoavesWebview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveLoavesWebview.swift; sourceTree = "<group>"; };
+		BF16060B1D9D42C900A7CD9B /* BridgeRunWebview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeRunWebview.swift; sourceTree = "<group>"; };
+		BF16060D1D9D454C00A7CD9B /* GreenHeartWebview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenHeartWebview.swift; sourceTree = "<group>"; };
+		BF16060F1D9D46B800A7CD9B /* BikramWebview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikramWebview.swift; sourceTree = "<group>"; };
 		BF2573DB1D8488E8009266B7 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		BF2573DD1D84D5A2009266B7 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		BF2573E11D850934009266B7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +186,7 @@
 		BFBE70411D8B05E1004D47BB /* PersonalInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoTableViewController.swift; sourceTree = "<group>"; };
 		BFBE70431D8B3878004D47BB /* PasswordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordTableViewController.swift; path = ../PasswordTableViewController.swift; sourceTree = "<group>"; };
 		BFD29AC41D776D83000FEDF8 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		BFE83A9E1D9CA46400AD9E14 /* Mex1Webview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mex1Webview.swift; sourceTree = "<group>"; };
 		BFFE544D1D8623F9004283BF /* FollowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		BFFE544F1D862453004283BF /* FollowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowCell.swift; sourceTree = "<group>"; };
 		BFFE54511D86711B004283BF /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -306,6 +316,7 @@
 		BF9095F81D737D2F0053880F = {
 			isa = PBXGroup;
 			children = (
+				BF1606091D9D3F3400A7CD9B /* FiveLoavesWebview.swift */,
 				BF0FE0851D88556E005816F0 /* DismissKeyboardExtension.swift */,
 				BF9096031D737D2F0053880F /* Vimcity */,
 				BF9096181D737D2F0053880F /* VimcityTests */,
@@ -331,6 +342,10 @@
 				BF9096041D737D2F0053880F /* AppDelegate.swift */,
 				BF90960D1D737D2F0053880F /* LaunchScreen.storyboard */,
 				BF9096081D737D2F0053880F /* Main.storyboard */,
+				BF16060F1D9D46B800A7CD9B /* BikramWebview.swift */,
+				BF16060D1D9D454C00A7CD9B /* GreenHeartWebview.swift */,
+				BF16060B1D9D42C900A7CD9B /* BridgeRunWebview.swift */,
+				BFE83A9E1D9CA46400AD9E14 /* Mex1Webview.swift */,
 				BF9096101D737D2F0053880F /* Info.plist */,
 				BF90960B1D737D2F0053880F /* Assets.xcassets */,
 				BF3C9A671D807815001A5230 /* Walkthru */,
@@ -554,6 +569,7 @@
 				BF9096631D7382770053880F /* Misc.swift in Sources */,
 				BF9096741D73FF130053880F /* BWWalkthroughPageViewController.swift in Sources */,
 				BF0FE0691D86ED77005816F0 /* EventCell.swift in Sources */,
+				BF16060C1D9D42C900A7CD9B /* BridgeRunWebview.swift in Sources */,
 				BF0FE0741D873E0F005816F0 /* WellnessViewController.swift in Sources */,
 				BF0FE07E1D87524D005816F0 /* InsideMessageViewController.swift in Sources */,
 				BF2573E21D850934009266B7 /* HomeViewController.swift in Sources */,
@@ -572,16 +588,20 @@
 				BFBE70421D8B05E1004D47BB /* PersonalInfoTableViewController.swift in Sources */,
 				BF9096661D7382770053880F /* SpringAnimation.swift in Sources */,
 				BFFE54521D86711B004283BF /* SettingsController.swift in Sources */,
+				BFE83A9F1D9CA46400AD9E14 /* Mex1Webview.swift in Sources */,
 				BF3C9A631D806375001A5230 /* FavoritesViewController.swift in Sources */,
 				BF9096771D7415A70053880F /* MainViewController.swift in Sources */,
 				BF9096751D73FF130053880F /* BWWalkthroughViewController.swift in Sources */,
 				BF9096651D7382770053880F /* Spring.swift in Sources */,
 				BF2573DC1D8488E8009266B7 /* FilterViewController.swift in Sources */,
+				BF16060A1D9D3F3400A7CD9B /* FiveLoavesWebview.swift in Sources */,
 				BF9096611D7382770053880F /* LoadingView.swift in Sources */,
 				BF90966A1D7382770053880F /* SpringTextField.swift in Sources */,
 				BF0FE0861D88556E005816F0 /* DismissKeyboardExtension.swift in Sources */,
+				BF16060E1D9D454C00A7CD9B /* GreenHeartWebview.swift in Sources */,
 				BF9096571D7382770053880F /* DesignableButton.swift in Sources */,
 				BF90965B1D7382770053880F /* DesignableTextField.swift in Sources */,
+				BF1606101D9D46B800A7CD9B /* BikramWebview.swift in Sources */,
 				BF9096531D7382770053880F /* AsyncButton.swift in Sources */,
 				BF0FE06E1D873A7D005816F0 /* UserDirectoryViewController.swift in Sources */,
 				BF9096601D7382770053880F /* KeyboardLayoutConstraint.swift in Sources */,
