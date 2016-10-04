@@ -13,12 +13,12 @@ class FavoritesViewController: UIViewController, UITableViewDataSource, UITableV
     
     @IBOutlet var tableView: UITableView!
     var identities = [String]()
-    var images = [UIImage(named: "Location 5") ,UIImage(named: "Location 4"), UIImage(named: "Location 3"), UIImage(named: "Location 2"), UIImage(named: "Location 1")]
+    var images = [UIImage(named: "Location 1") ,UIImage(named: "Fit Location 1"), UIImage(named: "Retail Location 1"), UIImage(named: "Location 2"), UIImage(named: "Service Location 1")]
     
     override func viewDidLoad() {
 
         
-    identities = ["Favorites A","Favorites A","Favorites A", "Premium", "Favorites A"]
+    identities = ["Favorites A","Bikram","Lulu", "Premium", "Urban"]
     
     }
   

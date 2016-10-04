@@ -11,7 +11,7 @@ import UIKit
 class WellnessViewController: UIViewController, UITableViewDataSource, UITextFieldDelegate {
 
     @IBAction func backButtonDidTouch(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)}
+        dismissViewControllerAnimated(true, completion: nil)}
     
     @IBOutlet weak var tableView: UITableView!
     
