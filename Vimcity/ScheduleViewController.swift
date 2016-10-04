@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ScheduleViewController: UIViewController
+class ScheduleViewController: UIViewController, UITextFieldDelegate
 {
    
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var textField: DesignableTextField!
-  
+    @IBOutlet weak var searchOverlay: UIView!
     @IBOutlet weak var exitSearch: UIImageView!
     @IBOutlet var bookAClass: [UIButton]!
     @IBOutlet weak var datePickerView: UIView!
@@ -24,10 +24,19 @@ class ScheduleViewController: UIViewController
     @IBOutlet weak var exitBookClass: UIButton!
     @IBOutlet weak var buyClassPass: UIButton!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        self.textField.delegate = self
     }
+    
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+
+    
     @IBAction func calendarButtonDidTouch(sender: AnyObject) {
         datePickerView.hidden = false
     }
@@ -51,9 +60,21 @@ class ScheduleViewController: UIViewController
         bookClass.hidden = true
     }
     
-
+    
+    @IBAction func textFieldDidEdit(sender: AnyObject) {
+        print("textField: \(textField.text)")
+        bookClass.hidden = true
+        backgroundImage.hidden = true
+        searchOverlay.hidden = false
+        exitSearch.hidden = false
     }
     
-    
+    @IBAction func exitSearchDidTouch(sender: AnyObject) {
+        backgroundImage.hidden = false
+        searchOverlay.hidden = true
+        exitSearch.hidden = true
+    }
 
+    
+}
 

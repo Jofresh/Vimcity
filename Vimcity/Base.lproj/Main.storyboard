@@ -2139,6 +2139,21 @@
                                     <action selector="buyClassButtonDidTouch:" destination="Uce-tl-eFI" eventType="touchUpInside" id="u0O-Rr-Fm9"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7mn-IK-8hV">
+                                <rect key="frame" x="-1" y="-36" width="376" height="703"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="search overlay 2" translatesAutoresizingMaskIntoConstraints="NO" id="jLb-iP-z3h">
+                                        <rect key="frame" x="20" y="102" width="336" height="326"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWi-5W-c9A">
+                                        <rect key="frame" x="66" y="102" width="246" height="127"/>
+                                        <connections>
+                                            <action selector="exitSearchDidTouch:" destination="Uce-tl-eFI" eventType="touchUpInside" id="qt8-01-dIF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2166,6 +2181,7 @@
                             <connections>
                                 <action selector="textFieldDidChanged:" destination="Uce-tl-eFI" eventType="editingDidEnd" id="npN-Ma-UQ7"/>
                                 <action selector="textFieldDidEdit:" destination="Uce-tl-eFI" eventType="editingChanged" id="S1I-Dg-EXH"/>
+                                <outlet property="delegate" destination="Uce-tl-eFI" id="cAh-qa-7rQ"/>
                             </connections>
                         </textField>
                     </navigationItem>
@@ -2180,6 +2196,7 @@
                         <outlet property="doneWithDatePicker" destination="xRX-bR-sOO" id="duL-l3-xuz"/>
                         <outlet property="exitBookClass" destination="gWn-Yh-tlL" id="81d-jt-h5y"/>
                         <outlet property="exitSearch" destination="SLg-hn-Eu2" id="H5E-Gd-bXI"/>
+                        <outlet property="searchOverlay" destination="7mn-IK-8hV" id="sYp-Dm-XCA"/>
                         <outlet property="textField" destination="4SR-8E-DBq" id="Tv9-5t-pGF"/>
                         <outletCollection property="bookAClass" destination="6Xa-xM-Tkq" collectionClass="NSMutableArray" id="87Z-1J-fLN"/>
                     </connections>
@@ -4749,6 +4766,7 @@
         <image name="personal training 1" width="145" height="21"/>
         <image name="schedule navi icon" width="26" height="25"/>
         <image name="search background" width="246" height="38"/>
+        <image name="search overlay 2" width="336" height="326"/>
         <image name="trails button 1" width="92" height="18"/>
         <image name="vegetarian vegan button 1" width="125" height="37"/>
         <image name="weight loss button 1" width="136" height="18"/>
