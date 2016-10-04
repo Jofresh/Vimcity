@@ -11,6 +11,8 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var textField: DesignableTextField!
+    @IBOutlet weak var searchOverlay: UIImageView!
+    @IBOutlet weak var exitSearch: UIButton!
     @IBOutlet weak var mapViewSwitcher: DesignableButton!
     @IBOutlet var tableView: UITableView!
     var identities = [String]()
@@ -42,5 +44,18 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let vcName = identities[indexPath.row]
         performSegueWithIdentifier(vcName, sender: self)
 }
+    @IBAction func textFieldDidChanged(sender: AnyObject) {
+        print("textField: \(textField.text)")
+        tableView.hidden = true
+        searchOverlay.hidden = false
+        exitSearch.hidden = false
+    }
+ 
+    @IBAction func exitSearchDidTouch(sender: AnyObject) {
+        tableView.hidden = false
+        searchOverlay.hidden = true
+        exitSearch.hidden = true
+    }
+   
    
 }
