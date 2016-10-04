@@ -26,6 +26,8 @@
 		BF0FE0841D8764F7005816F0 /* WearableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0831D8764F7005816F0 /* WearableViewController.swift */; };
 		BF0FE0861D88556E005816F0 /* DismissKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0FE0851D88556E005816F0 /* DismissKeyboardExtension.swift */; };
 		BF1369021DA3DE2A0006D478 /* Mex1RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1369011DA3DE2A0006D478 /* Mex1RedeemViewController.swift */; };
+		BF1369041DA3ED260006D478 /* UrbanWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1369031DA3ED260006D478 /* UrbanWebView.swift */; };
+		BF1369061DA3EE810006D478 /* LuluWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1369051DA3EE810006D478 /* LuluWebView.swift */; };
 		BF16060A1D9D3F3400A7CD9B /* FiveLoavesWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1606091D9D3F3400A7CD9B /* FiveLoavesWebview.swift */; };
 		BF16060C1D9D42C900A7CD9B /* BridgeRunWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16060B1D9D42C900A7CD9B /* BridgeRunWebview.swift */; };
 		BF16060E1D9D454C00A7CD9B /* GreenHeartWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF16060D1D9D454C00A7CD9B /* GreenHeartWebview.swift */; };
@@ -130,6 +132,8 @@
 		BF0FE0831D8764F7005816F0 /* WearableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WearableViewController.swift; sourceTree = "<group>"; };
 		BF0FE0851D88556E005816F0 /* DismissKeyboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissKeyboardExtension.swift; sourceTree = "<group>"; };
 		BF1369011DA3DE2A0006D478 /* Mex1RedeemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mex1RedeemViewController.swift; sourceTree = "<group>"; };
+		BF1369031DA3ED260006D478 /* UrbanWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrbanWebView.swift; sourceTree = "<group>"; };
+		BF1369051DA3EE810006D478 /* LuluWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuluWebView.swift; sourceTree = "<group>"; };
 		BF1606091D9D3F3400A7CD9B /* FiveLoavesWebview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveLoavesWebview.swift; sourceTree = "<group>"; };
 		BF16060B1D9D42C900A7CD9B /* BridgeRunWebview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeRunWebview.swift; sourceTree = "<group>"; };
 		BF16060D1D9D454C00A7CD9B /* GreenHeartWebview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenHeartWebview.swift; sourceTree = "<group>"; };
@@ -354,6 +358,8 @@
 				BF9096041D737D2F0053880F /* AppDelegate.swift */,
 				BF90960D1D737D2F0053880F /* LaunchScreen.storyboard */,
 				BF2B3D861DA315F100F552D9 /* Main.storyboard */,
+				BF1369051DA3EE810006D478 /* LuluWebView.swift */,
+				BF1369031DA3ED260006D478 /* UrbanWebView.swift */,
 				BF1369011DA3DE2A0006D478 /* Mex1RedeemViewController.swift */,
 				BF2B3D911DA33BC800F552D9 /* StudioViewController.swift */,
 				BF2B3D8F1DA3374D00F552D9 /* ServicesRedeemViewController.swift */,
@@ -630,6 +636,7 @@
 				BF9096791D746F210053880F /* SignUpViewController.swift in Sources */,
 				BF9096541D7382770053880F /* AsyncImageView.swift in Sources */,
 				BF0FE07C1D875117005816F0 /* UserProfileViewController.swift in Sources */,
+				BF1369041DA3ED260006D478 /* UrbanWebView.swift in Sources */,
 				BF43798F1D757A0E00C36398 /* MapPrototypeViewController.swift in Sources */,
 				BF0FE0781D874661005816F0 /* EventPageController.swift in Sources */,
 				BF2B3D901DA3374D00F552D9 /* ServicesRedeemViewController.swift in Sources */,
@@ -638,6 +645,7 @@
 				BF9096551D7382770053880F /* AutoTextView.swift in Sources */,
 				BF2B3D921DA33BC800F552D9 /* StudioViewController.swift in Sources */,
 				BF90965C1D7382770053880F /* DesignableTextView.swift in Sources */,
+				BF1369061DA3EE810006D478 /* LuluWebView.swift in Sources */,
 				BF43798D1D75625B00C36398 /* LoginViewController.swift in Sources */,
 				BF0FE0841D8764F7005816F0 /* WearableViewController.swift in Sources */,
 				BF2573DE1D84D5A2009266B7 /* ScheduleViewController.swift in Sources */,

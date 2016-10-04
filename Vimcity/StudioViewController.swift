@@ -13,16 +13,24 @@ class StudioViewController: UIViewController {
     @IBAction func backButtonDidTouch(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+    @IBOutlet weak var bookClass: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+    }
+    @IBAction func bookDidTouch(sender: AnyObject) {
+        bookClass.hidden = false
+    }
+    @IBAction func exitBookClassDidTouch(sender: AnyObject) {
+        bookClass.hidden = true
+    }
+    @IBAction func buyClassButtonDidTouch(sender: AnyObject) {
+        bookClass.hidden = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
 }

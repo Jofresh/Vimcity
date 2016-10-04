@@ -11,7 +11,10 @@ import UIKit
 class ScheduleViewController: UIViewController
 {
    
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var textField: DesignableTextField!
+  
+    @IBOutlet weak var exitSearch: UIImageView!
     @IBOutlet var bookAClass: [UIButton]!
     @IBOutlet weak var datePickerView: UIView!
     @IBOutlet weak var calendarButton: UIButton!
@@ -47,5 +50,10 @@ class ScheduleViewController: UIViewController
         self.tabBarController!.tabBar.layer.zPosition = 0;
         bookClass.hidden = true
     }
-}
+    
+
+    }
+    
+    
+
 
