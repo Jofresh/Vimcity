@@ -22,12 +22,12 @@ class MapPrototypeViewController: UIViewController {
         
     }
    
-    @IBAction func mapButtonDidTouch(sender: AnyObject) {
-        if mapIndicatorView.hidden == true {
-           mapIndicatorView.hidden = false
+    @IBAction func mapButtonDidTouch(_ sender: AnyObject) {
+        if mapIndicatorView.isHidden == true {
+           mapIndicatorView.isHidden = false
         }
         else {
-            mapIndicatorView.hidden = true
+            mapIndicatorView.isHidden = true
         }
     }
         

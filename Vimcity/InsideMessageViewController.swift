@@ -10,7 +10,7 @@ import UIKit
 
 class InsideMessageViewController: UIViewController {
 
-    @IBAction func backButtonDidTouch(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func backButtonDidTouch(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
 }

@@ -19,7 +19,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     textField.delegate = self
     textField1.delegate = self
     textField2.delegate = self
-    self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
+    self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.dismissKeyboard)))
     
 }
 
@@ -30,7 +30,7 @@ func dismissKeyboard(){
     
 }
 
-func textFieldShouldReturn(textField: UITextField) -> Bool {
+func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.resignFirstResponder()
     textField1.resignFirstResponder()
     textField2.resignFirstResponder()

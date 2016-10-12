@@ -54,134 +54,134 @@ class FilterViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        view.backgroundColor = UIColor.clearColor()
-        view.opaque = false
+        view.backgroundColor = UIColor.clear
+        view.isOpaque = false
         }
  
-    @IBAction func mainFilterGoButtonDidTouch(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func mainFilterGoButtonDidTouch(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
     //Switches to sub filter views
-    @IBAction func studioButtonDidTouch(sender: AnyObject) {
-    subFilterView.hidden = false
-        filterView.hidden = true}
-    @IBAction func retailButtonDidTouch(sender: AnyObject) {
-        retailFilterView.hidden = false
-        filterView.hidden = true}
-    @IBAction func foodAndDrinkButtonDidTouch(sender: AnyObject) {
-        foodAndBeverageFilterView.hidden = false
-        filterView.hidden = true}
-    @IBAction func servicesButtonDidTouch(sender: AnyObject) {
-        servicesFilterView.hidden = false
-        filterView.hidden = true}
-    @IBAction func communityButtonDidTouch(sender: AnyObject) {
-        communityFilterView.hidden = false
-        filterView.hidden = true
+    @IBAction func studioButtonDidTouch(_ sender: AnyObject) {
+    subFilterView.isHidden = false
+        filterView.isHidden = true}
+    @IBAction func retailButtonDidTouch(_ sender: AnyObject) {
+        retailFilterView.isHidden = false
+        filterView.isHidden = true}
+    @IBAction func foodAndDrinkButtonDidTouch(_ sender: AnyObject) {
+        foodAndBeverageFilterView.isHidden = false
+        filterView.isHidden = true}
+    @IBAction func servicesButtonDidTouch(_ sender: AnyObject) {
+        servicesFilterView.isHidden = false
+        filterView.isHidden = true}
+    @IBAction func communityButtonDidTouch(_ sender: AnyObject) {
+        communityFilterView.isHidden = false
+        filterView.isHidden = true
         }
     
     //Switches back to Filter View
-    @IBAction func studiosGoButtonDidTouch(sender: AnyObject) {
-        subFilterView.hidden = true
-        filterView.hidden = false}
-    @IBAction func retailGoButtonDidTouch(sender: AnyObject) {
-        retailFilterView.hidden = true
-        filterView.hidden = false}
-    @IBAction func foodGoButtonDidTouch(sender: AnyObject) {
-        foodAndBeverageFilterView.hidden = true
-        filterView.hidden = false}
-    @IBAction func servicesGoButtonDidTouch(sender: AnyObject) {
-        servicesFilterView.hidden = true
-        filterView.hidden = false}
-    @IBAction func communityGoButtonDidTouch(sender: AnyObject) {
-        communityFilterView.hidden = true
-        filterView.hidden = false}
+    @IBAction func studiosGoButtonDidTouch(_ sender: AnyObject) {
+        subFilterView.isHidden = true
+        filterView.isHidden = false}
+    @IBAction func retailGoButtonDidTouch(_ sender: AnyObject) {
+        retailFilterView.isHidden = true
+        filterView.isHidden = false}
+    @IBAction func foodGoButtonDidTouch(_ sender: AnyObject) {
+        foodAndBeverageFilterView.isHidden = true
+        filterView.isHidden = false}
+    @IBAction func servicesGoButtonDidTouch(_ sender: AnyObject) {
+        servicesFilterView.isHidden = true
+        filterView.isHidden = false}
+    @IBAction func communityGoButtonDidTouch(_ sender: AnyObject) {
+        communityFilterView.isHidden = true
+        filterView.isHidden = false}
 
     
     //Changes States for Studios Sub Filter
-    @IBAction func didTouchYogaButton(sender: AnyObject) {
+    @IBAction func didTouchYogaButton(_ sender: AnyObject) {
         let image = UIImage(named: "yoga button 2")! as UIImage
-        yogaButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func crossFitButtonDidTouch(sender: AnyObject) {
+        yogaButton.setImage(image, for: UIControlState())}
+    @IBAction func crossFitButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "cross fit button 2")! as UIImage
-        crossFitButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func indoorCyclingButtonDidTouch(sender: AnyObject) {
+        crossFitButton.setImage(image, for: UIControlState())}
+    @IBAction func indoorCyclingButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "indoor cycling button 2")! as UIImage
-        indoorCyclingButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func gymButtonDidTouch(sender: AnyObject) {
+        indoorCyclingButton.setImage(image, for: UIControlState())}
+    @IBAction func gymButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "gym button 2")! as UIImage
-        gymButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func personalTrainingButtonDidTouch(sender: AnyObject) {
+        gymButton.setImage(image, for: UIControlState())}
+    @IBAction func personalTrainingButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "personal training 2")! as UIImage
-        personalTrainingButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func groupButtonDidTouch(sender: AnyObject) {
+        personalTrainingButton.setImage(image, for: UIControlState())}
+    @IBAction func groupButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "group button 2")! as UIImage
-        groupButton.setImage(image, forState: UIControlState.Normal)}
+        groupButton.setImage(image, for: UIControlState())}
     
     //Changes States for Retail Sub Filter
-    @IBAction func apparelButtonDidTouch(sender: AnyObject) {
+    @IBAction func apparelButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "apparel button 2")! as UIImage
-        apparelButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func equipmentButtonDidTouch(sender: AnyObject) {
+        apparelButton.setImage(image, for: UIControlState())}
+    @IBAction func equipmentButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "equipment button 2")! as UIImage
-        equipmentButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func homeButtonDidTouch(sender: AnyObject) {
+        equipmentButton.setImage(image, for: UIControlState())}
+    @IBAction func homeButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "home button 2")! as UIImage
-        homeButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func foodGroceryButtonDidTouch(sender: AnyObject) {
+        homeButton.setImage(image, for: UIControlState())}
+    @IBAction func foodGroceryButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "food grocery button 2")! as UIImage
-        foodGroceryButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func personalCareButtonDidTouch(sender: AnyObject) {
+        foodGroceryButton.setImage(image, for: UIControlState())}
+    @IBAction func personalCareButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "personal care button 2")! as UIImage
-        personalCareButton.setImage(image, forState: UIControlState.Normal)}
+        personalCareButton.setImage(image, for: UIControlState())}
 
     //Changes States for Food n Bev Sub Filter
-    @IBAction func nearMeDidTouch(sender: AnyObject) {
+    @IBAction func nearMeDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "near me button 2")! as UIImage
-        nearMeButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func vegetarianButtonDidTouch(sender: AnyObject) {
+        nearMeButton.setImage(image, for: UIControlState())}
+    @IBAction func vegetarianButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "vegetarian vegan button 2")! as UIImage
-        vegetarianVeganButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func glutenFreeButtonDidTouch(sender: AnyObject) {
+        vegetarianVeganButton.setImage(image, for: UIControlState())}
+    @IBAction func glutenFreeButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "gluten free button 2")! as UIImage
-        glutenFreeButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func locallySourceButtonDidTouch(sender: AnyObject) {
+        glutenFreeButton.setImage(image, for: UIControlState())}
+    @IBAction func locallySourceButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "locally sourced button 2")! as UIImage
-        locallySourcedButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func foodTrucksButtonDidTouch(sender: AnyObject) {
+        locallySourcedButton.setImage(image, for: UIControlState())}
+    @IBAction func foodTrucksButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "food trucks button 2")! as UIImage
-        foodTrucksButton.setImage(image, forState: UIControlState.Normal)}
+        foodTrucksButton.setImage(image, for: UIControlState())}
     
     //Changes States for Services Sub Filter
-    @IBAction func activeLivingButtonDidTouch(sender: AnyObject) {
+    @IBAction func activeLivingButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "active living button 2")! as UIImage
-        activeLivingButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func medicineButtonDidTouch(sender: AnyObject) {
+        activeLivingButton.setImage(image, for: UIControlState())}
+    @IBAction func medicineButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "medicine button 2")! as UIImage
-        medicineButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func weightLossButtonDidTouch(sender: AnyObject) {
+        medicineButton.setImage(image, for: UIControlState())}
+    @IBAction func weightLossButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "weight loss button 2")! as UIImage
-        weightLossButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func massageButtonDidTouch(sender: AnyObject) {
+        weightLossButton.setImage(image, for: UIControlState())}
+    @IBAction func massageButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "massage button 2")! as UIImage
-        massageButton.setImage(image, forState: UIControlState.Normal)}
+        massageButton.setImage(image, for: UIControlState())}
     
     //Changes States for Community Sub Filter
-    @IBAction func parksButtonDidTouch(sender: AnyObject) {
+    @IBAction func parksButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "parks button 2")! as UIImage
-        parksButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func trailsButtonDidTouch(sender: AnyObject) {
+        parksButton.setImage(image, for: UIControlState())}
+    @IBAction func trailsButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "trails button 2")! as UIImage
-        trailsButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func communityGardensButtonDidTouch(sender: AnyObject) {
+        trailsButton.setImage(image, for: UIControlState())}
+    @IBAction func communityGardensButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "community button 2")! as UIImage
-        communityGardensButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func clubsButtonDidTouch(sender: AnyObject) {
+        communityGardensButton.setImage(image, for: UIControlState())}
+    @IBAction func clubsButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "clubs button 2")! as UIImage
-        clubsButton.setImage(image, forState: UIControlState.Normal)}
-    @IBAction func farmersMarketButtonDidTouch(sender: AnyObject) {
+        clubsButton.setImage(image, for: UIControlState())}
+    @IBAction func farmersMarketButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "farmers markets button 2")! as UIImage
-        farmersMarket.setImage(image, forState: UIControlState.Normal)}
+        farmersMarket.setImage(image, for: UIControlState())}
 }
 
     

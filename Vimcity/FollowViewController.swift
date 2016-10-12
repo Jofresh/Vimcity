@@ -10,8 +10,8 @@ import UIKit
 
 class FollowViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBAction func backButtonDidTouch(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func backButtonDidTouch(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     @IBOutlet var tableView: UITableView!
     var identities = [String]()
@@ -24,22 +24,22 @@ class FollowViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 13
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as!
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!
         FollowCell
         
-        cell.userPhotoAndName.image = images[indexPath.row]
+        cell.userPhotoAndName.image = images[(indexPath as NSIndexPath).row]
         
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let vcName = identities[indexPath.row]
-        performSegueWithIdentifier(vcName, sender: self)
+        let vcName = identities[(indexPath as NSIndexPath).row]
+        performSegue(withIdentifier: vcName, sender: self)
     
     }}

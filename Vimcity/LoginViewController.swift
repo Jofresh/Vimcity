@@ -17,7 +17,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         textField.delegate = self
         textField1.delegate = self
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LoginViewController.dismissKeyboard)))
 
 }
     
@@ -27,7 +27,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         textField1.resignFirstResponder()
         return true

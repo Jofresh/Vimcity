@@ -15,19 +15,19 @@ class GreenHeartWebview: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let URL = NSURL(string: "http://www.greenheartsc.org")
+        let URL = Foundation.URL(string: "http://www.greenheartsc.org")
         
-        webView.loadRequest(NSURLRequest(URL: URL!))
+        webView.loadRequest(URLRequest(url: URL!))
         
     }
     
-    @IBAction func backButtonDidTouch(sender: AnyObject) {
+    @IBAction func backButtonDidTouch(_ sender: AnyObject) {
         if(webView.canGoBack) {
             //Go back in webview history
             webView.goBack()
         } else {
             //Pop view controller to preview view controller
-            self.navigationController?.popViewControllerAnimated(true)
+            self.navigationController?.popViewController(animated: true)
         }
     }
     
@@ -36,7 +36,7 @@ class GreenHeartWebview: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 }

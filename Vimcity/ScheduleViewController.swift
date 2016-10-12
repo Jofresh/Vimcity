@@ -28,51 +28,56 @@ class ScheduleViewController: UIViewController, UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         self.textField.delegate = self
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ScheduleViewController.dismissKeyboard)))
+
     }
     
+    func dismissKeyboard(){
+        textField.resignFirstResponder()
+    }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
 
     
-    @IBAction func calendarButtonDidTouch(sender: AnyObject) {
-        datePickerView.hidden = false
+    @IBAction func calendarButtonDidTouch(_ sender: AnyObject) {
+        datePickerView.isHidden = false
     }
  
-    @IBAction func doneWithDatePickerDidTouch(sender: AnyObject) {
-        datePickerView.hidden = true
+    @IBAction func doneWithDatePickerDidTouch(_ sender: AnyObject) {
+        datePickerView.isHidden = true
     }
-    @IBAction func bookDidTouch(sender: AnyObject) {
+    @IBAction func bookDidTouch(_ sender: AnyObject) {
         self.navigationController!.navigationBar.layer.zPosition = -1;
         self.tabBarController!.tabBar.layer.zPosition = -1;
-        bookClass.hidden = false
+        bookClass.isHidden = false
     }
-    @IBAction func exitBookClassDidTouch(sender: AnyObject) {
+    @IBAction func exitBookClassDidTouch(_ sender: AnyObject) {
         self.navigationController!.navigationBar.layer.zPosition = 0;
         self.tabBarController!.tabBar.layer.zPosition = 0;
-        bookClass.hidden = true
+        bookClass.isHidden = true
     }
-    @IBAction func buyClassButtonDidTouch(sender: AnyObject) {
+    @IBAction func buyClassButtonDidTouch(_ sender: AnyObject) {
         self.navigationController!.navigationBar.layer.zPosition = 0;
         self.tabBarController!.tabBar.layer.zPosition = 0;
-        bookClass.hidden = true
+        bookClass.isHidden = true
     }
     
-    
-    @IBAction func textFieldDidEdit(sender: AnyObject) {
+   
+    @IBAction func textFieldDidChange(_ sender: AnyObject) {
         print("textField: \(textField.text)")
-        bookClass.hidden = true
-        backgroundImage.hidden = true
-        searchOverlay.hidden = false
-        exitSearch.hidden = false
+        bookClass.isHidden = true
+        backgroundImage.isHidden = true
+        searchOverlay.isHidden = false
+        exitSearch.isHidden = false
     }
     
-    @IBAction func exitSearchDidTouch(sender: AnyObject) {
-        backgroundImage.hidden = false
-        searchOverlay.hidden = true
-        exitSearch.hidden = true
+    @IBAction func exitSearchDidTouch(_ sender: AnyObject) {
+        backgroundImage.isHidden = false
+        searchOverlay.isHidden = true
+        exitSearch.isHidden = true
     }
 
     

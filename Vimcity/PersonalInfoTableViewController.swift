@@ -10,27 +10,27 @@ import UIKit
 
 class PersonalInfoTableViewController: UITableViewController {
 
-    @IBAction func backButtonDidTouch(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func backButtonDidTouch(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func doneButtonDidTouch(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func doneButtonDidTouch(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
-    tableView.tableFooterView = UIView(frame: CGRectZero)
+    tableView.tableFooterView = UIView(frame: CGRect.zero)
     tableView.backgroundView = UIImageView(image: UIImage(named: "background with white top"))
     
     }
-    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
     
     // This changes the header background
-    view.tintColor = UIColor.whiteColor()
+    view.tintColor = UIColor.white
     
     // Gets the header view as a UITableViewHeaderFooterView and changes the text colour
     let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-    headerView.textLabel!.textColor = UIColor.grayColor()
+    headerView.textLabel!.textColor = UIColor.gray
     
 }
 }

@@ -11,26 +11,26 @@ import UIKit
 class PopUpDealViewController: UIViewController {
 
 
-    @IBAction func backButtonDidTouch(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func backButtonDidTouch(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
-    @IBAction func redeemDealButtonDidTouch(sender: AnyObject) {
+    @IBAction func redeemDealButtonDidTouch(_ sender: AnyObject) {
         openUpgradeAlert()
     }
     
     func openUpgradeAlert() {
-        let alert = UIAlertController(title: "Upgrade To Premium", message: "In order to redeem Pop Up Deals, you need to upgrade to a Premium account.", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Upgrade To Premium", message: "In order to redeem Pop Up Deals, you need to upgrade to a Premium account.", preferredStyle: UIAlertControllerStyle.alert)
         
-        let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil)
+        let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
         
         alert.addAction(cancel)
         
-        let go = UIAlertAction(title: "Go!", style: UIAlertActionStyle.Default) { (action: UIAlertAction) in
+        let go = UIAlertAction(title: "Go!", style: UIAlertActionStyle.default) { (action: UIAlertAction) in
             print("Go!") }
         
         alert.addAction(go)
         
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
     }
 
 }

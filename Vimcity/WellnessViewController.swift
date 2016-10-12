@@ -10,8 +10,8 @@ import UIKit
 
 class WellnessViewController: UIViewController, UITableViewDataSource, UITextFieldDelegate {
 
-    @IBAction func backButtonDidTouch(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)}
+    @IBAction func backButtonDidTouch(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)}
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,21 +21,21 @@ class WellnessViewController: UIViewController, UITableViewDataSource, UITextFie
     var steps = ["376", "1156", "5647", "67k"]
     
     override func viewDidLoad() {
-        tableView.backgroundColor = UIColor.clearColor()
+        tableView.backgroundColor = UIColor.clear
         
 }
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
         
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as!
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!
         WellnessCell
         
-        cell.day.text = day[indexPath.row]
-        cell.studioVisits.text = studioVisits[indexPath.row]
-        cell.checkIns.text = checkIns[indexPath.row]
-        cell.steps.text = steps[indexPath.row]
+        cell.day.text = day[(indexPath as NSIndexPath).row]
+        cell.studioVisits.text = studioVisits[(indexPath as NSIndexPath).row]
+        cell.checkIns.text = checkIns[(indexPath as NSIndexPath).row]
+        cell.steps.text = steps[(indexPath as NSIndexPath).row]
         
         return cell
        

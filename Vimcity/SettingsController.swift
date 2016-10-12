@@ -10,8 +10,8 @@ import UIKit
 
 class SettingsController: UITableViewController {
     
-    @IBAction func backButtonDidTouch(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
+    @IBAction func backButtonDidTouch(_ sender: AnyObject) {
+        navigationController?.popViewController(animated: true)
     }
   
     override func viewDidLoad() {
@@ -20,14 +20,14 @@ class SettingsController: UITableViewController {
         
         
     }
-    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         
         // This changes the header background
-        view.tintColor = UIColor.whiteColor()
+        view.tintColor = UIColor.white
         
         // Gets the header view as a UITableViewHeaderFooterView and changes the text colour
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        headerView.textLabel!.textColor = UIColor.grayColor()
+        headerView.textLabel!.textColor = UIColor.gray
 }
 
     

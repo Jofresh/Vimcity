@@ -24,11 +24,11 @@ class MainViewController: UIViewController, BWWalkthroughViewControllerDelegate 
  
 
         let stb = UIStoryboard(name: "Main", bundle: nil)
-        walkthrough = stb.instantiateViewControllerWithIdentifier("walk0") as! BWWalkthroughViewController
-        let page_one = stb.instantiateViewControllerWithIdentifier("walk1")
-        let page_two = stb.instantiateViewControllerWithIdentifier("walk2")
-        let page_three = stb.instantiateViewControllerWithIdentifier("walk3")
-        let page_four = stb.instantiateViewControllerWithIdentifier("walk4")
+        walkthrough = stb.instantiateViewController(withIdentifier: "walk0") as! BWWalkthroughViewController
+        let page_one = stb.instantiateViewController(withIdentifier: "walk1")
+        let page_two = stb.instantiateViewController(withIdentifier: "walk2")
+        let page_three = stb.instantiateViewController(withIdentifier: "walk3")
+        let page_four = stb.instantiateViewController(withIdentifier: "walk4")
      
         
         // Attach the pages to the master
@@ -38,7 +38,7 @@ class MainViewController: UIViewController, BWWalkthroughViewControllerDelegate 
         walkthrough.addViewController(page_three)
         walkthrough.addViewController(page_four)
    
-        self.presentViewController(walkthrough, animated: true, completion: nil)
+        self.present(walkthrough, animated: true, completion: nil)
         
                 }
     }
