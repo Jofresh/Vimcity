@@ -29,7 +29,7 @@ class BridgeRunWebview: UIViewController {
             webView.goBack()
         } else {
             //Pop view controller to preview view controller
-            self.navigationController?.popViewController(animated: true)
+           _ = navigationController?.popViewController(animated: true)
         }
     }
     

@@ -12,7 +12,7 @@ class UserDirectoryViewController: UIViewController, UITableViewDataSource, UITa
         
 
     @IBAction func backButtonDidTouch(_ sender: AnyObject) {
-        navigationController?.popViewController(animated: true)
+        _ = navigationController?.popViewController(animated: true)
     }
     
     @IBOutlet weak var tableView: UITableView!

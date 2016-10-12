@@ -11,7 +11,7 @@ import UIKit
 class SettingsController: UITableViewController {
     
     @IBAction func backButtonDidTouch(_ sender: AnyObject) {
-        navigationController?.popViewController(animated: true)
+        _ = navigationController?.popViewController(animated: true)
     }
   
     override func viewDidLoad() {
