@@ -10,10 +10,27 @@ import UIKit
 
 class FilterViewController: UIViewController {
     
-    //Outlets for Main Filter
+    //Outlets for Main views
     @IBOutlet var mainView: DesignableView!
+    @IBOutlet weak var resultsView: UIView!
     @IBOutlet weak var filterView: UIView!
     @IBOutlet weak var studioButton: UIButton!
+    @IBOutlet weak var retailButton: UIButton!
+    @IBOutlet weak var servicesButton: UIButton!
+    @IBOutlet weak var foodnbevButton: UIButton!
+    @IBOutlet weak var communityButton: UIButton!
+    
+    @IBOutlet weak var selectedAllButton: UIButton!
+    @IBOutlet weak var unselectedAllButton: UIButton!
+    
+    //Outlets for results
+    @IBOutlet weak var studioResults: UIImageView!
+    @IBOutlet weak var yogaResults: UIImageView!
+    @IBOutlet weak var yogaAndCrossfitResults: UIImageView!
+    @IBOutlet weak var retailResults: UIImageView!
+    @IBOutlet weak var servicesResults: UIImageView!
+    @IBOutlet weak var foodAndBevResults: UIImageView!
+    
     
     //Studios SubFilter Buttons
     @IBOutlet weak var subFilterView: UIView!
@@ -59,52 +76,135 @@ class FilterViewController: UIViewController {
         }
  
     @IBAction func mainFilterGoButtonDidTouch(_ sender: AnyObject) {
+        filterView.isHidden = true
+        //dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func dismissEntireView(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }
     
     //Switches to sub filter views
     @IBAction func studioButtonDidTouch(_ sender: AnyObject) {
+        let image = UIImage(named: "studios button 2")! as UIImage
+        studioButton.setImage(image, for: UIControlState())
+        resultsView.isHidden = false
+        studioResults.isHidden = false
+        yogaResults.isHidden = true
+        yogaAndCrossfitResults.isHidden = true
+        retailResults.isHidden = true
+        servicesResults.isHidden = true
+        foodAndBevResults.isHidden = true
     subFilterView.isHidden = false
-        filterView.isHidden = true}
+        filterView.isHidden = true
+    selectedAllButton.isHidden = false}
     @IBAction func retailButtonDidTouch(_ sender: AnyObject) {
+        let image = UIImage(named: "retail button 2")! as UIImage
+        retailButton.setImage(image, for: UIControlState())
+        resultsView.isHidden = false
+        studioResults.isHidden = true
+        yogaResults.isHidden = true
+        yogaAndCrossfitResults.isHidden = true
+        retailResults.isHidden = false
+        servicesResults.isHidden = true
+        foodAndBevResults.isHidden = true
         retailFilterView.isHidden = false
-        filterView.isHidden = true}
-    @IBAction func foodAndDrinkButtonDidTouch(_ sender: AnyObject) {
+        filterView.isHidden = true
+    selectedAllButton.isHidden = false}
+    @IBAction func foodAndDrinkButtonDidTouch(_ sender: AnyObject){
+        let image = UIImage(named: "food n bev button 2")! as UIImage
+        foodnbevButton.setImage(image, for: UIControlState())
+        resultsView.isHidden = false
+        studioResults.isHidden = true
+        yogaResults.isHidden = true
+        yogaAndCrossfitResults.isHidden = true
+        retailResults.isHidden = true
+        servicesResults.isHidden = true
+        foodAndBevResults.isHidden = false
         foodAndBeverageFilterView.isHidden = false
-        filterView.isHidden = true}
+        filterView.isHidden = true
+    selectedAllButton.isHidden = false}
     @IBAction func servicesButtonDidTouch(_ sender: AnyObject) {
+        let image = UIImage(named: "services button 2")! as UIImage
+        servicesButton.setImage(image, for: UIControlState())
+        resultsView.isHidden = false
+        studioResults.isHidden = true
+        yogaResults.isHidden = true
+        yogaAndCrossfitResults.isHidden = true
+        retailResults.isHidden = true
+        servicesResults.isHidden = false
+        foodAndBevResults.isHidden = true
         servicesFilterView.isHidden = false
-        filterView.isHidden = true}
+        filterView.isHidden = true
+    selectedAllButton.isHidden = false}
     @IBAction func communityButtonDidTouch(_ sender: AnyObject) {
+        let image = UIImage(named: "community button 2")! as UIImage
+        communityButton.setImage(image, for: UIControlState())
+        resultsView.isHidden = false
+        studioResults.isHidden = true
+        yogaResults.isHidden = true
+        yogaAndCrossfitResults.isHidden = true
+        retailResults.isHidden = true
+        servicesResults.isHidden = true
+        foodAndBevResults.isHidden = true
         communityFilterView.isHidden = false
         filterView.isHidden = true
+        selectedAllButton.isHidden = false
         }
     
     //Switches back to Filter View
     @IBAction func studiosGoButtonDidTouch(_ sender: AnyObject) {
+        let image = UIImage(named: "yoga button 1")! as UIImage
+        yogaButton.setImage(image, for: UIControlState())
+        let image2 = UIImage(named: "cross fit button 1")! as UIImage
+        crossFitButton.setImage(image2, for: UIControlState())
+        resultsView.isHidden = false
         subFilterView.isHidden = true
-        filterView.isHidden = false}
+        filterView.isHidden = false
+    selectedAllButton.isHidden = true
+    unselectedAllButton.isHidden = true}
     @IBAction func retailGoButtonDidTouch(_ sender: AnyObject) {
+        resultsView.isHidden = false
         retailFilterView.isHidden = true
-        filterView.isHidden = false}
+        filterView.isHidden = false
+    selectedAllButton.isHidden = true
+    unselectedAllButton.isHidden = true}
     @IBAction func foodGoButtonDidTouch(_ sender: AnyObject) {
+        resultsView.isHidden = false
         foodAndBeverageFilterView.isHidden = true
-        filterView.isHidden = false}
+        filterView.isHidden = false
+    selectedAllButton.isHidden = true
+    unselectedAllButton.isHidden = true}
     @IBAction func servicesGoButtonDidTouch(_ sender: AnyObject) {
+        resultsView.isHidden = false
         servicesFilterView.isHidden = true
-        filterView.isHidden = false}
+        filterView.isHidden = false
+    selectedAllButton.isHidden = true
+    unselectedAllButton.isHidden = true}
     @IBAction func communityGoButtonDidTouch(_ sender: AnyObject) {
+        resultsView.isHidden = false
         communityFilterView.isHidden = true
-        filterView.isHidden = false}
+        filterView.isHidden = false
+    selectedAllButton.isHidden = true
+    unselectedAllButton.isHidden = true}
 
     
     //Changes States for Studios Sub Filter
     @IBAction func didTouchYogaButton(_ sender: AnyObject) {
         let image = UIImage(named: "yoga button 2")! as UIImage
-        yogaButton.setImage(image, for: UIControlState())}
+        yogaButton.setImage(image, for: UIControlState())
+        studioResults.isHidden = true
+        yogaResults.isHidden = false
+    selectedAllButton.isHidden = true
+    unselectedAllButton.isHidden = false}
     @IBAction func crossFitButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "cross fit button 2")! as UIImage
-        crossFitButton.setImage(image, for: UIControlState())}
+        crossFitButton.setImage(image, for: UIControlState())
+        studioResults.isHidden = true
+        yogaResults.isHidden = true
+        yogaAndCrossfitResults.isHidden = false
+        selectedAllButton.isHidden = true
+        unselectedAllButton.isHidden = false}
     @IBAction func indoorCyclingButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "indoor cycling button 2")! as UIImage
         indoorCyclingButton.setImage(image, for: UIControlState())}
@@ -174,7 +274,7 @@ class FilterViewController: UIViewController {
         let image = UIImage(named: "trails button 2")! as UIImage
         trailsButton.setImage(image, for: UIControlState())}
     @IBAction func communityGardensButtonDidTouch(_ sender: AnyObject) {
-        let image = UIImage(named: "community button 2")! as UIImage
+        let image = UIImage(named: "community gardens button 2")! as UIImage
         communityGardensButton.setImage(image, for: UIControlState())}
     @IBAction func clubsButtonDidTouch(_ sender: AnyObject) {
         let image = UIImage(named: "clubs button 2")! as UIImage

@@ -21,7 +21,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         
-    identities = ["Home A","Bikram","Lulu", "Urban","Premium","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A"]
+    identities = ["Home A","Bikram","Lulu", "Urban","Premium","Home A", "Home A","Home A","Park", "Home A","Home A","Home A", "Verde","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A","Home A","Home A", "Home A"]
     
     }
 
