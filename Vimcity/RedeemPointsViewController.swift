@@ -20,14 +20,14 @@ class RedeemPointsViewController: UIViewController {
     }
     
     func openUpgradeAlert() {
-        let alert = UIAlertController(title: "Upgrade To Premium", message: "In order to redeem Points, you need to upgrade to a Premium account.", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Are You Sure You Want To Redeem Your $1 Credit?", message: "You will not be able to redeem another $1 from Five Loaves for 1 week.", preferredStyle: UIAlertControllerStyle.alert)
         
         let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
         
         alert.addAction(cancel)
         
-        let go = UIAlertAction(title: "Go!", style: UIAlertActionStyle.default) { (action: UIAlertAction) in
-            print("Go!") }
+        let go = UIAlertAction(title: "Yes!", style: UIAlertActionStyle.default) { (action: UIAlertAction) in
+            print("Yes!") }
             
         alert.addAction(go)
         

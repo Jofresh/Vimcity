@@ -48,8 +48,11 @@
 		BF3C9A6B1D807BD7001A5230 /* LocationProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */; };
 		BF43798D1D75625B00C36398 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF43798C1D75625B00C36398 /* LoginViewController.swift */; };
 		BF43798F1D757A0E00C36398 /* MapPrototypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF43798E1D757A0E00C36398 /* MapPrototypeViewController.swift */; };
+		BF4ED4D31DDAA29A008BE20C /* BodyworksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4ED4D21DDAA299008BE20C /* BodyworksViewController.swift */; };
+		BF4ED4D71DDAAE02008BE20C /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4ED4D61DDAAE02008BE20C /* InviteViewController.swift */; };
+		BF86058B1DCB8C150000A6A5 /* regularDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF86058A1DCB8C150000A6A5 /* regularDealViewController.swift */; };
 		BF9096051D737D2F0053880F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096041D737D2F0053880F /* AppDelegate.swift */; };
-		BF90960C1D737D2F0053880F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF90960B1D737D2F0053880F /* Assets.xcassets */; };
+		BF90960C1D737D2F0053880F /*  .xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF90960B1D737D2F0053880F /*  .xcassets */; };
 		BF90960F1D737D2F0053880F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF90960D1D737D2F0053880F /* LaunchScreen.storyboard */; };
 		BF90961A1D737D2F0053880F /* VimcityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096191D737D2F0053880F /* VimcityTests.swift */; };
 		BF9096251D737D2F0053880F /* VimcityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9096241D737D2F0053880F /* VimcityUITests.swift */; };
@@ -166,9 +169,12 @@
 		BF3C9A6A1D807BD7001A5230 /* LocationProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationProfileViewController.swift; sourceTree = "<group>"; };
 		BF43798C1D75625B00C36398 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF43798E1D757A0E00C36398 /* MapPrototypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPrototypeViewController.swift; sourceTree = "<group>"; };
+		BF4ED4D21DDAA299008BE20C /* BodyworksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyworksViewController.swift; sourceTree = "<group>"; };
+		BF4ED4D61DDAAE02008BE20C /* InviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
+		BF86058A1DCB8C150000A6A5 /* regularDealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = regularDealViewController.swift; sourceTree = "<group>"; };
 		BF9096011D737D2F0053880F /* Vimcity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vimcity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF9096041D737D2F0053880F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF90960B1D737D2F0053880F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF90960B1D737D2F0053880F /*  .xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = " .xcassets"; sourceTree = "<group>"; };
 		BF90960E1D737D2F0053880F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF9096101D737D2F0053880F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF9096151D737D2F0053880F /* VimcityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimcityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -383,6 +389,9 @@
 				BF9096041D737D2F0053880F /* AppDelegate.swift */,
 				BF90960D1D737D2F0053880F /* LaunchScreen.storyboard */,
 				BF2B3D861DA315F100F552D9 /* Main.storyboard */,
+				BF4ED4D61DDAAE02008BE20C /* InviteViewController.swift */,
+				BF4ED4D21DDAA299008BE20C /* BodyworksViewController.swift */,
+				BF86058A1DCB8C150000A6A5 /* regularDealViewController.swift */,
 				BFE3954F1DB62C13007727E1 /* FollowersFlatViewController.swift */,
 				BFE395511DB62C34007727E1 /* FollowingFlatViewController.swift */,
 				BFE3954D1DB629C4007727E1 /* RedeemParkViewController.swift */,
@@ -407,7 +416,7 @@
 				BF16060B1D9D42C900A7CD9B /* BridgeRunWebview.swift */,
 				BFE83A9E1D9CA46400AD9E14 /* Mex1Webview.swift */,
 				BF9096101D737D2F0053880F /* Info.plist */,
-				BF90960B1D737D2F0053880F /* Assets.xcassets */,
+				BF90960B1D737D2F0053880F /*  .xcassets */,
 				BF3C9A671D807815001A5230 /* Walkthru */,
 				BF43798C1D75625B00C36398 /* LoginViewController.swift */,
 				BF9096781D746F210053880F /* SignUpViewController.swift */,
@@ -599,7 +608,7 @@
 				BF90965F1D7382770053880F /* Info.plist in Resources */,
 				BF2B3D881DA315F100F552D9 /* Main.storyboard in Resources */,
 				BF90960F1D737D2F0053880F /* LaunchScreen.storyboard in Resources */,
-				BF90960C1D737D2F0053880F /* Assets.xcassets in Resources */,
+				BF90960C1D737D2F0053880F /*  .xcassets in Resources */,
 				BF9096621D7382770053880F /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,6 +658,7 @@
 				BF90966B1D7382770053880F /* SpringTextView.swift in Sources */,
 				BFE395461DB5BEEA007727E1 /* StudioVisitsViewController.swift in Sources */,
 				BF9096051D737D2F0053880F /* AppDelegate.swift in Sources */,
+				BF4ED4D31DDAA29A008BE20C /* BodyworksViewController.swift in Sources */,
 				BF0FE0721D873C84005816F0 /* FreeClassViewController.swift in Sources */,
 				BF0FE0701D873C0A005816F0 /* CauseViewController.swift in Sources */,
 				BF0FE0761D87404E005816F0 /* PopUpDealViewController.swift in Sources */,
@@ -658,12 +668,14 @@
 				BF9096661D7382770053880F /* SpringAnimation.swift in Sources */,
 				BFFE54521D86711B004283BF /* SettingsController.swift in Sources */,
 				BF2B3D8C1DA3352E00F552D9 /* RetailRedeemViewController.swift in Sources */,
+				BF86058B1DCB8C150000A6A5 /* regularDealViewController.swift in Sources */,
 				BFE83A9F1D9CA46400AD9E14 /* Mex1Webview.swift in Sources */,
 				BF3C9A631D806375001A5230 /* FavoritesViewController.swift in Sources */,
 				BF9096771D7415A70053880F /* MainViewController.swift in Sources */,
 				BF9096751D73FF130053880F /* BWWalkthroughViewController.swift in Sources */,
 				BF9096651D7382770053880F /* Spring.swift in Sources */,
 				BF2573DC1D8488E8009266B7 /* FilterViewController.swift in Sources */,
+				BF4ED4D71DDAAE02008BE20C /* InviteViewController.swift in Sources */,
 				BF16060A1D9D3F3400A7CD9B /* FiveLoavesWebview.swift in Sources */,
 				BF9096611D7382770053880F /* LoadingView.swift in Sources */,
 				BF90966A1D7382770053880F /* SpringTextField.swift in Sources */,
@@ -865,7 +877,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Vimcity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thatlevel.Vimcity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thatlevel.VimcityPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -878,7 +890,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Vimcity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.thatlevel.Vimcity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thatlevel.VimcityPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

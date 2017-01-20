@@ -30,6 +30,7 @@ class FilterViewController: UIViewController {
     @IBOutlet weak var retailResults: UIImageView!
     @IBOutlet weak var servicesResults: UIImageView!
     @IBOutlet weak var foodAndBevResults: UIImageView!
+    @IBOutlet weak var communityResults: UIImageView!
     
     
     //Studios SubFilter Buttons
@@ -95,6 +96,7 @@ class FilterViewController: UIViewController {
         retailResults.isHidden = true
         servicesResults.isHidden = true
         foodAndBevResults.isHidden = true
+        communityResults.isHidden = true
     subFilterView.isHidden = false
         filterView.isHidden = true
     selectedAllButton.isHidden = false}
@@ -108,6 +110,7 @@ class FilterViewController: UIViewController {
         retailResults.isHidden = false
         servicesResults.isHidden = true
         foodAndBevResults.isHidden = true
+        communityResults.isHidden = true
         retailFilterView.isHidden = false
         filterView.isHidden = true
     selectedAllButton.isHidden = false}
@@ -121,6 +124,7 @@ class FilterViewController: UIViewController {
         retailResults.isHidden = true
         servicesResults.isHidden = true
         foodAndBevResults.isHidden = false
+        communityResults.isHidden = true
         foodAndBeverageFilterView.isHidden = false
         filterView.isHidden = true
     selectedAllButton.isHidden = false}
@@ -134,6 +138,7 @@ class FilterViewController: UIViewController {
         retailResults.isHidden = true
         servicesResults.isHidden = false
         foodAndBevResults.isHidden = true
+        communityResults.isHidden = true
         servicesFilterView.isHidden = false
         filterView.isHidden = true
     selectedAllButton.isHidden = false}
@@ -147,6 +152,7 @@ class FilterViewController: UIViewController {
         retailResults.isHidden = true
         servicesResults.isHidden = true
         foodAndBevResults.isHidden = true
+        communityResults.isHidden = false
         communityFilterView.isHidden = false
         filterView.isHidden = true
         selectedAllButton.isHidden = false

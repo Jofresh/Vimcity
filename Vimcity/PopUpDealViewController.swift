@@ -19,14 +19,14 @@ class PopUpDealViewController: UIViewController {
     }
     
     func openUpgradeAlert() {
-        let alert = UIAlertController(title: "Upgrade To Premium", message: "In order to redeem Pop Up Deals, you need to upgrade to a Premium account.", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Pop Up Deals", message: "Are you sure you want to redeem this Pop Up Deal?", preferredStyle: UIAlertControllerStyle.alert)
         
         let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
         
         alert.addAction(cancel)
         
-        let go = UIAlertAction(title: "Go!", style: UIAlertActionStyle.default) { (action: UIAlertAction) in
-            print("Go!") }
+        let go = UIAlertAction(title: "Yes!", style: UIAlertActionStyle.default) { (action: UIAlertAction) in
+            print("Yes!") }
         
         alert.addAction(go)
         
